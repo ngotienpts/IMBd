@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- favicon -->
+  <link rel="icon" sizes="32x32" href="./images/favicon/32x32.png">
+  <link rel="icon" sizes="167x167" href="./images/favicon/167x167.png">
+  <link rel="icon" sizes="180x180" href="./images/favicon/180x180.png">
+  <!-- end favicon -->
+  <title>IMDb</title>
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <!-- end font -->
+  
+  <link rel="stylesheet" href="./lib/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
+  <script src="./lib/jquery/jquery.js"></script>
+</head>
+
+<body>
+  
+  <!-- header -->
+  <header id="header" class="header bg-gray-12 h-56">
+      <div class="w-1280 d-2xl-flex items-center h-full px-12 gap-8">
+        <!-- logo -->
+        <div class="flex-1 max-w-fit">
+          <a href="#">
+            <img src="./images/svg/logo.svg" alt="">
+          </a>
+        </div>
+        <!-- end logo -->
+        <!-- menu pc -->
+        <div class="header-menu flex-1 max-w-fit ">
+          <div class="cursor d-2xl-flex items-center h-32 px-16 bg-transparent hover-bg-008  transition border-4">
+            <img src="./images/svg/bar.svg" alt="">
+            <h1 class="ml-4 fw-600 fs-14 tracking-02">Menu</h1>
+          </div>
+          <!-- box -->
+          <div class="header-menu-box">
+            <div class="header-menu-box__inner">
+              <div class="w-1024">
+                <!-- heading -->
+                <div class="header-menu__heading d-2xl-flex items-center justify-between px-16">
+                    <a href="#" class="header-menu__link"><img src="./images/svg/logo.svg" alt="" class="w-full"></a>
+                    <button class="header-menu__close btn bg--yellow-f5c">
+                      <img src="./images/svg/close.svg" alt="">
+                    </button>
+                  </div>
+                <!-- end heading -->
+                <!-- list -->
+                <div class="header-menu__list d-2xl-grid col-3">
+                  <!-- item -->
+                  <div class="header-menu__item">
+                    <!-- title -->
+                    <div class="header-menu__title position-relative mt-24 px-16 py-8">
+                      <img src="./images/svg/flim.svg" alt="" class="header-menu__icon position-absolute">
+                      <h2 class="header-menu__text fw-600 fs-24">Movies</h2>
+                    </div>
+                    <!-- title -->
+                    <ul>
+                      <li class="header-menu__txt">
+                        <a href="#" class="link-decoration text-white fs-16">Release Calendar</a>
+                      </li>
+                      <li class="header-menu__txt">
+                        <a href="#" class="link-decoration text-white fs-16">Release Calendar</a>
+                      </li>
+                      <li class="header-menu__txt">
+                        <a href="#" class="link-decoration text-white fs-16">Release Calendar</a>
+                      </li>
+                      <li class="header-menu__txt">
+                        <a href="#" class="link-decoration text-white fs-16">Release Calendar</a>
+                      </li>
+                      <li class="header-menu__txt">
+                        <a href="#" class="link-decoration text-white fs-16">Release Calendar</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- end item -->
+                  <!-- item -->
+                  <div class="header-menu__item">
+                    <!-- title -->
+                    <div class="header-menu__title position-relative mt-24 px-16 py-8">
+                      <img src="./images/svg/tv.svg" alt="" class="header-menu__icon position-absolute">
+                      <h2 class="header-menu__text fw-600 fs-24">TV Shows</h2>
+                    </div>
+                    <!-- title -->
+                    <ul>
+                      <li class="header-menu__txt">
+                        <a href="#" class="link-decoration text-white fs-16">Release Calendar</a>
+                      </li>
+                      <li class="header-menu__txt">
+                        <a href="#" class="link-decoration text-white fs-16">Release Calendar</a>
+                      </li>
+                      <li class="header-menu__txt">
+                        <a href="#" class="link-decoration text-white fs-16">Release Calendar</a>
+                      </li>
+                      <li class="header-menu__txt">
+                        <a href="#" class="link-decoration text-white fs-16">Release Calendar</a>
+                      </li>
+                      <li class="header-menu__txt">
+                        <a href="#" class="link-decoration text-white fs-16">Release Calendar</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- end item -->
+                  <!-- item -->
+                  <div class="header-menu__item">
+                    <!-- title -->
+                    <div class="header-menu__title position-relative mt-24 px-16 py-8">
+                      <img src="./images/svg/award.svg" alt="" class="header-menu__icon position-absolute">
+                      <h2 class="header-menu__text fw-600 fs-24">Awards & Events</h2>
+                    </div>
+                    <!-- title -->
+                    <ul>
+                      <li class="header-menu__txt">
+                        <a href="#" class="link-decoration text-white fs-16">Release Calendar</a>
+                      </li>
+                      <li class="header-menu__txt">
+                        <a href="#" class="link-decoration text-white fs-16">Release Calendar</a>
+                      </li>
+                      <li class="header-menu__txt">
+                        <a href="#" class="link-decoration text-white fs-16">Release Calendar</a>
+                      </li>
+                      <li class="header-menu__txt">
+                        <a href="#" class="link-decoration text-white fs-16">Release Calendar</a>
+                      </li>
+                      <li class="header-menu__txt">
+                        <a href="#" class="link-decoration text-white fs-16">Release Calendar</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- end item -->
+                  <!-- item -->
+                  <div class="header-menu__item">
+                    <!-- title -->
+                    <div class="header-menu__title position-relative mt-24 px-16 py-8">
+                      <img src="./images/svg/user.svg" alt="" class="header-menu__icon position-absolute">
+                      <h2 class="header-menu__text fw-600 fs-24">Celebs</h2>
+                    </div>
+                    <!-- title -->
+                    <ul>
+                      <li class="header-menu__txt">
+                        <a href="#" class="link-decoration text-white fs-16">Release Calendar</a>
+                      </li>
+                      <li class="header-menu__txt">
+                        <a href="#" class="link-decoration text-white fs-16">Release Calendar</a>
+                      </li>
+                      <li class="header-menu__txt">
+                        <a href="#" class="link-decoration text-white fs-16">Release Calendar</a>
+                      </li>
+                      <li class="header-menu__txt">
+                        <a href="#" class="link-decoration text-white fs-16">Release Calendar</a>
+                      </li>
+                      <li class="header-menu__txt">
+                        <a href="#" class="link-decoration text-white fs-16">Release Calendar</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- end item -->
+                  <!-- item -->
+                  <div class="header-menu__item">
+                    <!-- title -->
+                    <div class="header-menu__title position-relative mt-24 px-16 py-8">
+                      <img src="./images/svg/watch.svg" alt="" class="header-menu__icon position-absolute">
+                      <h2 class="header-menu__text fw-600 fs-24">Watch</h2>
+                    </div>
+                    <!-- title -->
+                    <ul>
+                      <li class="header-menu__txt">
+                        <a href="#" class="link-decoration text-white fs-16">Release Calendar</a>
+                      </li>
+                      <li class="header-menu__txt">
+                        <a href="#" class="link-decoration text-white fs-16">Release Calendar</a>
+                      </li>
+                      <li class="header-menu__txt">
+                        <a href="#" class="link-decoration text-white fs-16">Release Calendar</a>
+                      </li>
+                      <li class="header-menu__txt">
+                        <a href="#" class="link-decoration text-white fs-16">Release Calendar</a>
+                      </li>
+                      <li class="header-menu__txt">
+                        <a href="#" class="link-decoration text-white fs-16">Release Calendar</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- end item -->
+                  <!-- item -->
+                  <div class="header-menu__item">
+                    <!-- title -->
+                    <div class="header-menu__title position-relative mt-24 px-16 py-8">
+                      <img src="./images/svg/earth.svg" alt="" class="header-menu__icon position-absolute">
+                      <h2 class="header-menu__text fw-600 fs-24">Community</h2>
+                    </div>
+                    <!-- title -->
+                    <ul>
+                      <li class="header-menu__txt">
+                        <a href="#" class="link-decoration text-white fs-16">Release Calendar</a>
+                      </li>
+                      <li class="header-menu__txt">
+                        <a href="#" class="link-decoration text-white fs-16">Release Calendar</a>
+                      </li>
+                      <li class="header-menu__txt">
+                        <a href="#" class="link-decoration text-white fs-16">Release Calendar</a>
+                      </li>
+                      <li class="header-menu__txt">
+                        <a href="#" class="link-decoration text-white fs-16">Release Calendar</a>
+                      </li>
+                      <li class="header-menu__txt">
+                        <a href="#" class="link-decoration text-white fs-16">Release Calendar</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- end item -->
+                </div>
+                <!-- end list -->
+              </div>
+            </div>
+          </div>
+          <!-- end box -->
+        </div>
+        <!-- end menu pc -->
+        <!-- serach -->
+        <div class="header-search flex-1 w-full">
+            <form action="" class="">
+              <div class="position-relative">
+                <input type="text" class="header-search-input w-full h-32 border-4 p-8 fs-14" placeholder="Search IMDb">
+                <button class="header-search-btn btn position-absolute">
+                  <img src="./images/svg/search.svg" alt="">
+                </button>
+              </div>
+            </form>
+        </div>
+        <!-- end serach -->
+        <div class="hearch-line-vertical"></div>
+        <!-- sign in -->
+        <div class="flex-1 max-w-fit">
+          <button class="btn h-32 fw-600 tracking-02 fs-14 hover-bg-008 transition border-4">Sign In</button>
+        </div>
+        <!-- end sign in -->
+      </div>
+      
+  </header>
+  <!-- end header -->
+  <!-- main -->
+  <main id="main" class="main" style="height:1000px">
+   
+  </main>
+  <!-- end main -->
+  <!-- footer -->
+  <footer id="footer" class="footer">
+    
+    <!-- back top -->
+    <div id="back-top">top</div>
+    <!-- end back top -->
+  </footer>
+  <!-- end footer -->
+
+  <script src="./lib/swiper/swiper-bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

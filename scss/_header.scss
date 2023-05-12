@@ -1,0 +1,58 @@
+.hearch-line-vertical {
+    border: 1px solid rgba(255, 355, 255, 0.16);
+    width: 1px;
+    height: 2rem;
+    margin-left: 0.5rem;
+}
+.header-search {
+    &-input {
+        padding-right: 3.5rem;
+        border: 2px solid transparent;
+        &:focus {
+            border-color: #f5c518;
+        }
+    }
+    &-btn {
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+}
+.header-menu {
+    &-box {
+        position: fixed;
+        inset: 0;
+        background-color: #1f1f1f;
+        z-index: 100;
+        padding: 2rem 0;
+
+        &__inner {
+            max-height: calc(100vh - 200px);
+            overflow: auto;
+        }
+    }
+    &__heading {
+        height: 63px;
+    }
+    &__link {
+        width: 98px;
+    }
+    &__close {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        padding: 0;
+    }
+    &__title {
+        padding-left: 52px;
+    }
+    &__icon {
+        top: 50%;
+        left: 1rem;
+        transform: translateY(-50%);
+    }
+    &__txt {
+        padding: 8px 16px 8px 52px;
+        letter-spacing: 0.03125em;
+    }
+}
