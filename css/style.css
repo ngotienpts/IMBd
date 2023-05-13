@@ -176,6 +176,9 @@ body {
   color: #fff;
   background-color: #000;
 }
+body.hidden {
+  overflow: hidden;
+}
 
 input,
 textarea,
@@ -1039,6 +1042,10 @@ img {
   line-height: 2.125rem;
 }
 
+.lh-40 {
+  line-height: 2.5rem;
+}
+
 .lh-46 {
   line-height: 2.875rem;
 }
@@ -1138,6 +1145,10 @@ img {
   letter-spacing: 0.02em;
 }
 
+.tracking-073 {
+  letter-spacing: 0.00735em;
+}
+
 /*=================================================================*/
 .transition {
   transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1);
@@ -1179,10 +1190,18 @@ img {
   background-color: #1f1f1f;
   z-index: 100;
   padding: 2rem 0;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.2s ease;
 }
 .header-menu-box__inner {
   max-height: calc(100vh - 200px);
   overflow: auto;
+}
+.header-menu-box:not(.show) {
+  top: -100%;
+  opacity: 0;
+  visibility: hidden;
 }
 .header-menu__heading {
   height: 63px;
@@ -1209,6 +1228,17 @@ img {
   letter-spacing: 0.03125em;
 }
 
+.main-primary-left__content {
+  bottom: 0;
+  right: 0;
+  align-items: flex-end;
+}
+.main-primary-left__thumb {
+  max-width: 165px;
+}
+.main-primary-left__time {
+  margin-left: 2rem;
+}
 #back-top {
   position: fixed;
   right: 1rem;

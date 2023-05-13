@@ -1,0 +1,29 @@
+.main-primary {
+    &-left {
+        &__item {
+        }
+        &__img {
+        }
+        &__content {
+            bottom: 0;
+            right: 0;
+            align-items: flex-end;
+        }
+        &__thumb {
+            max-width: 165px;
+        }
+        &__text {
+        }
+        &__heading {
+        }
+        &__top {
+        }
+        &__time {
+            margin-left: 2rem;
+        }
+        &__title {
+        }
+        &__des {
+        }
+    }
+}

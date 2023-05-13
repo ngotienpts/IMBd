@@ -25,10 +25,18 @@
         background-color: #1f1f1f;
         z-index: 100;
         padding: 2rem 0;
+        opacity: 1;
+        visibility: visible;
+        transition: all 0.2s ease;
 
         &__inner {
             max-height: calc(100vh - 200px);
             overflow: auto;
+        }
+        &:not(.show) {
+            top: -100%;
+            opacity: 0;
+            visibility: hidden;
         }
     }
     &__heading {
