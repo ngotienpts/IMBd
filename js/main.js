@@ -50,34 +50,33 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         },
 
-        // media
-        sliderMedia: function () {
-            var swiper = new Swiper(".mySwiperMediaSecondary", {
-                slidesPerView: 2,
+        // slider primary
+        sliderPrimary: function () {
+            var swiper = new Swiper(".primaryRight", {
+                slidesPerView: 3,
                 slidesPerGroup: 1,
+                direction: "vertical",
+                loop: true,
                 freeMode: true,
-                watchSlidesProgress: true,
-                direction: "vertical",
-                mousewheel: true,
-                scrollbar: {
-                    el: ".swiper-scrollbar",
-                },
-                // breakpoints: {
-                //   768: {
-                //     slidesPerView: 2,
-                //     spaceBetween: 0,
-                //     slidesPerGroup: 1,
-                //   },
-                // },
             });
-            var swiper2 = new Swiper(".mySwiperMediaPrimary", {
-                direction: "vertical",
+            var swiper2 = new Swiper(".primaryLeft", {
                 slidesPerView: 1,
-                spaceBetween: 30,
-                mousewheel: true,
+                spaceBetween: 0,
+                loop: true,
                 thumbs: {
                     swiper: swiper,
                 },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        },
+        // slider six item
+        sliderSixItems: function () {
+            var swiper = new Swiper(".js_sixItems", {
+                slidesPerView: 6,
+                spaceBetween: 30,
             });
         },
         // scroll top
@@ -110,6 +109,10 @@ document.addEventListener("DOMContentLoaded", function () {
             this.handleEvent();
             // window scroll
             this.windowScroll();
+            // slider primary
+            this.sliderPrimary();
+            // slider six item
+            this.sliderSixItems();
         },
     };
 

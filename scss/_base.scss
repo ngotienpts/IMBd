@@ -87,6 +87,7 @@ a:focus {
 img {
     display: block;
     max-width: 100%;
+    object-fit: cover;
 }
 .mx-auto {
     margin: auto;
@@ -128,6 +129,9 @@ img {
 }
 .d-2xl-inline {
     display: inline-block;
+}
+.d-2xl-inline-flex {
+    display: inline-flex;
 }
 /*=================================================================*/
 .btn {
@@ -248,6 +252,9 @@ img {
 }
 .bg--yellow-f5c {
     background-color: #f5c518;
+}
+.bg-white-80 {
+    background-color: rgba($color: #252525, $alpha: 0.8);
 }
 .bg-transparent {
     background-color: transparent;
@@ -799,6 +806,9 @@ img {
 .h-36 {
     height: 2.25rem;
 }
+.h-40 {
+    height: 2.5rem;
+}
 .h-56 {
     height: 3.5rem;
 }
@@ -807,6 +817,9 @@ img {
     max-width: fit-content;
 }
 /*=================================================================*/
+.tracking-0125 {
+    letter-spacing: 0.0125em;
+}
 .tracking-02 {
     letter-spacing: 0.02em;
 }
@@ -822,8 +835,25 @@ img {
     &:hover {
         background-color: rgba($color: #252525, $alpha: 0.8);
     }
+    &:active {
+        background-color: rgba($color: #fff, $alpha: 0.2);
+    }
+}
+.hover-blue-008 {
+    &:hover {
+        background-color: rgba($color: #5799ef, $alpha: 0.08);
+        color: #5799ef;
+    }
+    &:active {
+        background-color: rgba($color: #5799ef, $alpha: 0.2);
+        color: #5799ef;
+    }
 }
 /*=================================================================*/
 .cursor {
     cursor: pointer;
+}
+/*=================================================================*/
+.cover {
+    object-fit: cover;
 }
