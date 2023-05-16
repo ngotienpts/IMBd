@@ -1,65 +1,125 @@
 // max width 1280px
 @media (max-width: 80em) {
-  .d-xl-none {
-    display: none;
-  }
-  .d-xl-block {
-    display: block;
-  }
-  .d-xl-flex {
-    display: flex;
-  }
-  .d-xl-grid {
-    display: grid;
-  }
-  /*-------------------------------------------------------------*/
+    .d-xl-none {
+        display: none;
+    }
+    .d-xl-block {
+        display: block;
+    }
+    .d-xl-flex {
+        display: flex;
+    }
+    .d-xl-grid {
+        display: grid;
+    }
+    /*------------------------------------------------------------- index*/
+    .main-primary-left {
+        max-width: 100%;
+    }
 }
 // max width 1024px
 @media (max-width: 64em) {
-  .d-lg-none {
-    display: none;
-  }
-  .d-lg-block {
-    display: block;
-  }
-  .d-lg-flex {
-    display: flex;
-  }
-  .d-lg-grid {
-    display: grid;
-  }
+    .d-lg-none {
+        display: none;
+    }
+    .d-lg-block {
+        display: block;
+    }
+    .d-lg-flex {
+        display: flex;
+    }
+    .d-lg-grid {
+        display: grid;
+    }
+
+    // --------------------------------------------------------------------index
+    .main-secondary__heading,
+    .category,
+    .main-secondary__list .swiper,
+    .main-tertiary__list .swiper,
+    .recenly__list {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .recenly__list {
+        grid-gap: 1rem;
+    }
 }
 
 // max width 768px
 @media (max-width: 48em) {
-  .d-md-none {
-    display: none;
-  }
-  .d-md-block {
-    display: block;
-  }
-  .d-md-flex {
-    display: flex;
-  }
-  .d-md-grid {
-    display: grid;
-  }
+    .d-md-none {
+        display: none;
+    }
+    .d-md-block {
+        display: block;
+    }
+    .d-md-flex {
+        display: flex;
+    }
+    .d-md-grid {
+        display: grid;
+    }
+
+    // --------------------------------------------------------------------index
+    .recenly__list {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 // max width 640px
 @media (max-width: 40em) {
-  .d-sm-none {
-    display: none;
-  }
-  .d-sm-block {
-    display: block;
-  }
-  .d-sm-flex {
-    display: flex;
-  }
-  .d-sm-grid {
-    display: grid;
-  }
+    .d-sm-none {
+        display: none;
+    }
+    .d-sm-block {
+        display: block;
+    }
+    .d-sm-flex {
+        display: flex;
+    }
+    .d-sm-grid {
+        display: grid;
+    }
+
+    // --------------------------------------------------------------------index
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+    .main-primary-left {
+        &__content {
+            padding-left: 0;
+            padding-right: 0;
+            align-items: flex-end;
+        }
+        &__title {
+            font-size: 1rem;
+            line-height: 1.25rem;
+            font-weight: bold;
+        }
+        &__des {
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+    }
+    .primary-left__icon svg {
+        width: 3.125rem;
+        height: 3.125rem;
+    }
+    .main-secondary {
+        &__heading {
+            .h2 {
+                font-size: 1.5rem;
+            }
+            &-recenly {
+                font-size: 1.25rem;
+            }
+        }
+    }
+    .category .h3 {
+        font-size: 1.25rem;
+    }
 }
 
 // danh cho man hinh duoi 400px

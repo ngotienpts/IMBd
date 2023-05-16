@@ -1,3 +1,14 @@
+.overlay {
+    position: absolute;
+    inset: 0;
+    // opacity: 0;
+    // visibility: hidden;
+    // z-index: 0;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease;
+    will-change: opacity;
+}
 .hearch-line-vertical {
     border: 1px solid rgba(255, 355, 255, 0.16);
     width: 1px;
@@ -38,6 +49,36 @@
             opacity: 0;
             visibility: hidden;
         }
+
+        &__mb {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 17.5rem;
+            height: 100%;
+            background-color: rgb(31, 31, 31);
+            z-index: 100;
+            box-shadow: 0px 11px 15px -7px rgba(var(--ipt-baseAlt-rgb), 0.2),
+                0px 24px 38px 3px rgba(var(--ipt-baseAlt-rgb), 0.14),
+                0px 9px 46px 8px rgba(var(--ipt-baseAlt-rgb), 0.12);
+            transform: translateX(0);
+            &-close {
+                justify-content: end;
+                background: repeating-linear-gradient(
+                        45deg,
+                        rgba(255, 255, 255, 0.08),
+                        rgba(255, 255, 255, 0.08) 2px,
+                        transparent 2px,
+                        transparent 7px
+                    ),
+                    transparent;
+                button {
+                    width: 3rem;
+                    height: 3rem;
+                    padding: 0.75rem;
+                }
+            }
+        }
     }
     &__heading {
         height: 63px;
@@ -49,7 +90,20 @@
         width: 3rem;
         height: 3rem;
         border-radius: 50%;
+        overflow: hidden;
         padding: 0;
+        position: relative;
+        &::before {
+            transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1);
+            position: absolute;
+            content: "";
+            inset: 0;
+            opacity: 0;
+            background-color: #000;
+        }
+        &:hover::before {
+            opacity: 0.08;
+        }
     }
     &__title {
         padding-left: 52px;
