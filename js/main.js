@@ -41,6 +41,9 @@ document.addEventListener("DOMContentLoaded", function () {
     var menuPc = getElement(".js_clickShowMenu");
     var closeMenuPc = getElement(".js_closeMenu");
 
+    // show dropdown sub menu
+    var dropdownSubMenu = getAllElement('.js_dropDown')
+
     const app = {
         // su ly cac su kien
         handleEvent: function () {
@@ -66,6 +69,22 @@ document.addEventListener("DOMContentLoaded", function () {
                     item.classList.remove("show");
                     document.querySelector("body").classList.remove("hidden");
                 };
+            }
+
+            // dropdown sub menu
+            if(dropdownSubMenu){
+                dropdownSubMenu.forEach(item => {
+                    var parent = item.parentElement
+                    var nextEle = parent.querySelector('.js_listSubMenu')
+                    item.onclick = function(){
+                        parent.classList.toggle('active')
+                        if(nextEle.style.maxHeight){
+                            nextEle.style.maxHeight = null
+                        }else {
+                            nextEle.style.maxHeight = nextEle.scrollHeight + 'px'
+                        }
+                    }
+                })
             }
         },
 
