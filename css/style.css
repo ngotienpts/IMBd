@@ -438,7 +438,7 @@ img {
 }
 
 .text-white-70 {
-  color: hsla(0deg, 0%, 100%, 0.7);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .text-yellow-f5c {
@@ -1250,7 +1250,9 @@ img {
 .overlay {
   position: absolute;
   inset: 0;
-  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 0;
   background-color: rgba(0, 0, 0, 0.5);
   transition: all 0.2s ease;
   will-change: opacity;
@@ -1301,10 +1303,11 @@ img {
   top: 0;
   width: 17.5rem;
   height: 100%;
-  background-color: rgb(31, 31, 31);
+  background-color: #1f1f1f;
   z-index: 100;
   box-shadow: 0px 11px 15px -7px rgba(var(--ipt-baseAlt-rgb), 0.2), 0px 24px 38px 3px rgba(var(--ipt-baseAlt-rgb), 0.14), 0px 9px 46px 8px rgba(var(--ipt-baseAlt-rgb), 0.12);
-  transform: translateX(0);
+  transform: translateX(-100%);
+  transition: all 0.2s ease;
 }
 .header-menu-box__mb-close {
   justify-content: end;
@@ -1352,6 +1355,14 @@ img {
   padding: 8px 16px 8px 52px;
   letter-spacing: 0.03125em;
 }
+.header-menu.active .header-menu-box__mb {
+  transform: translate(0);
+}
+.header-menu.active .overlay {
+  opacity: 1;
+  visibility: visible;
+  z-index: 99;
+}
 
 .list-sub {
   max-height: 0;
@@ -1371,8 +1382,12 @@ img {
   transition: all 0.2s ease 0s;
   transform: rotate(90deg);
 }
+.heading-sub__item svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
 
-.header-menu-box__mb-list {
+.header-menu-box__container {
   height: calc(100% - 100px);
   overflow: auto;
 }
@@ -1383,6 +1398,30 @@ img {
 .header-menu-box__mb-item.active .heading-sub__arrow svg {
   color: #fff;
   transform: rotate(-90deg);
+}
+
+.header-search-mb {
+  justify-content: flex-end;
+}
+.header-search-mb__icon {
+  width: 3rem;
+  height: 3rem;
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 0;
+}
+.header-search-mb__form {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+}
+.header-search-mb__form.active {
+  top: 0;
+  opacity: 1;
+  visibility: visible;
 }
 
 .main-primary-left__list {
@@ -1508,7 +1547,7 @@ img {
   width: 50px;
   height: 66px;
   top: 35%;
-  background-color: hsla(0deg, 0%, 7%, 0.45);
+  background-color: rgba(18, 18, 18, 0.45);
   border-radius: 0.25rem;
   border: 1px solid #fff;
   padding: 1.25rem 0.75rem;
@@ -1675,15 +1714,15 @@ img {
 .footer-item .st1 {
   fill-rule: evenodd;
   clip-rule: evenodd;
-  fill: rgb(0, 102, 255);
+  fill: #0066ff;
 }
 .footer-item .eHMgCW .st0 {
   fill-rule: evenodd;
   clip-rule: evenodd;
-  fill: rgb(255, 255, 255);
+  fill: white;
 }
 .footer-item .eHMgCW .st2 {
-  fill: rgb(255, 255, 255);
+  fill: white;
 }
 .footer-list {
   flex-wrap: wrap;

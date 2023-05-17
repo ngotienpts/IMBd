@@ -41,8 +41,12 @@ document.addEventListener("DOMContentLoaded", function () {
     var menuPc = getElement(".js_clickShowMenu");
     var closeMenuPc = getElement(".js_closeMenu");
 
-    // show dropdown sub menu
-    var dropdownSubMenu = getAllElement('.js_dropDown')
+    // show sub menu
+    var dropdownSubMenu = getAllElement(".js_dropDown");
+    var subMenu = getElement(".js_clickShowMenuMb");
+
+    // search mb
+    var searchMb = getElement(".js_searchMb");
 
     const app = {
         // su ly cac su kien
@@ -70,21 +74,52 @@ document.addEventListener("DOMContentLoaded", function () {
                     document.querySelector("body").classList.remove("hidden");
                 };
             }
+            // show sub menu
+            if (subMenu) {
+                var closeSubMenu = getElement(".js_closeSubMenu");
+                var overlay = getElement(".js_overlay");
+                var parentBox = subMenu.parentElement;
 
+                subMenu.onclick = function () {
+                    this.parentElement.classList.add("active");
+                    document.querySelector("body").classList.add("hidden");
+                };
+                closeSubMenu.onclick = function () {
+                    parentBox.classList.remove("active");
+                    document.querySelector("body").classList.remove("hidden");
+                };
+                overlay.onclick = function () {
+                    parentBox.classList.remove("active");
+                    document.querySelector("body").classList.remove("hidden");
+                };
+            }
             // dropdown sub menu
-            if(dropdownSubMenu){
-                dropdownSubMenu.forEach(item => {
-                    var parent = item.parentElement
-                    var nextEle = parent.querySelector('.js_listSubMenu')
-                    item.onclick = function(){
-                        parent.classList.toggle('active')
-                        if(nextEle.style.maxHeight){
-                            nextEle.style.maxHeight = null
-                        }else {
-                            nextEle.style.maxHeight = nextEle.scrollHeight + 'px'
+            if (dropdownSubMenu) {
+                dropdownSubMenu.forEach((item) => {
+                    var parent = item.parentElement;
+                    var nextEle = parent.querySelector(".js_listSubMenu");
+                    item.onclick = function () {
+                        parent.classList.toggle("active");
+                        if (nextEle.style.maxHeight) {
+                            nextEle.style.maxHeight = null;
+                        } else {
+                            nextEle.style.maxHeight =
+                                nextEle.scrollHeight + "px";
                         }
-                    }
-                })
+                    };
+                });
+            }
+
+            // search mb
+            if (searchMb) {
+                var closeSearchMb = getElement(".js_closeSearchMb");
+                var formSearchMb = getElement(".js_formSearchMb");
+                searchMb.onclick = function () {
+                    formSearchMb.classList.add("active");
+                };
+                closeSearchMb.onclick = function () {
+                    formSearchMb.classList.remove("active");
+                };
             }
         },
 

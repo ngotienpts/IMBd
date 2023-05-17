@@ -1,10 +1,9 @@
 .overlay {
     position: absolute;
     inset: 0;
-    // opacity: 0;
-    // visibility: hidden;
-    // z-index: 0;
-    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 0;
     background-color: rgba(0, 0, 0, 0.5);
     transition: all 0.2s ease;
     will-change: opacity;
@@ -61,7 +60,8 @@
             box-shadow: 0px 11px 15px -7px rgba(var(--ipt-baseAlt-rgb), 0.2),
                 0px 24px 38px 3px rgba(var(--ipt-baseAlt-rgb), 0.14),
                 0px 9px 46px 8px rgba(var(--ipt-baseAlt-rgb), 0.12);
-            transform: translateX(0);
+            transform: translateX(-100%);
+            transition: all 0.2s ease;
             &-close {
                 justify-content: end;
                 background: repeating-linear-gradient(
@@ -117,6 +117,14 @@
         padding: 8px 16px 8px 52px;
         letter-spacing: 0.03125em;
     }
+    &.active &-box__mb {
+        transform: translate(0);
+    }
+    &.active .overlay {
+        opacity: 1;
+        visibility: visible;
+        z-index: 99;
+    }
 }
 
 .list-sub {
@@ -129,28 +137,56 @@
         display: flex;
         padding: 0.5rem 1rem 0.5rem 3.125rem;
     }
-    &:last-child &__link{
+    &:last-child &__link {
         border-bottom: 1px solid rgba(255, 355, 255, 0.16);
     }
 }
 .heading-sub {
-    &__arrow svg{
+    &__arrow svg {
         transition: all 0.2s ease 0s;
         transform: rotate(90deg);
     }
+    &__item svg {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
 }
-.header-menu-box__mb-list {
+.header-menu-box__container {
     height: calc(100% - 100px);
     overflow: auto;
 }
 .header-menu-box__mb-item {
     &.active {
-        .heading-sub__left{
+        .heading-sub__left {
             color: #f5c518;
         }
-        .heading-sub__arrow svg{
+        .heading-sub__arrow svg {
             color: #fff;
             transform: rotate(-90deg);
+        }
+    }
+}
+.header-search-mb {
+    justify-content: flex-end;
+    &__icon {
+        width: 3rem;
+        height: 3rem;
+        background-color: transparent;
+        border-radius: 50%;
+        padding: 0;
+    }
+    &__form {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.2s ease;
+
+        &.active {
+            top: 0;
+            opacity: 1;
+            visibility: visible;
         }
     }
 }

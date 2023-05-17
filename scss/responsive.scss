@@ -82,6 +82,19 @@
         display: grid;
     }
 
+    // --------------------------------------------------------------------header
+    .header-wrapper {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .header-search {
+        &-input {
+            border: none;
+            &:focus {
+                border-color: transparent;
+            }
+        }
+    }
     // --------------------------------------------------------------------index
     .swiper-button-next,
     .swiper-button-prev {
