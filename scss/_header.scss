@@ -7,6 +7,11 @@
     background-color: rgba(0, 0, 0, 0.5);
     transition: all 0.2s ease;
     will-change: opacity;
+    &.active {
+        opacity: 1;
+        visibility: visible;
+        z-index: 99;
+    }
 }
 .hearch-line-vertical {
     border: 1px solid rgba(255, 355, 255, 0.16);

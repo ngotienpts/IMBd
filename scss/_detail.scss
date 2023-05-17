@@ -1,0 +1,90 @@
+.episode {
+    &:hover svg {
+        color: #f5c518;
+    }
+}
+.detail-primary {
+    &__top {
+        .item {
+            padding-left: 0.75rem;
+            padding-right: 0.75rem;
+            border-right: 1px solid rgba($color: #fff, $alpha: 0.2);
+            &:last-child {
+                border-right: none;
+            }
+        }
+        .text .text-link {
+            position: relative;
+            padding-right: 1rem;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 2px;
+                height: 2px;
+                background-color: rgba($color: #fff, $alpha: 0.8);
+                top: 50%;
+                right: 6px;
+                transform: translateY(-50%);
+            }
+            &:last-child {
+                padding-right: 0;
+            }
+            &:last-child::before {
+                content: none;
+            }
+        }
+    }
+
+    &__heading {
+        .left {
+            .item {
+                padding-right: 1rem;
+                position: relative;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 2px;
+                    height: 2px;
+                    background-color: rgba($color: #fff, $alpha: 0.8);
+                    top: 50%;
+                    right: 6px;
+                    transform: translateY(-50%);
+                }
+                &:last-child {
+                    padding-right: 0;
+                }
+                &:last-child::before {
+                    content: none;
+                }
+            }
+        }
+        .right {
+            .action-item {
+                + .action-item {
+                    margin-left: 0.5rem;
+                }
+                &__img {
+                    width: 2rem;
+                    height: 2rem;
+                }
+            }
+        }
+    }
+}
+
+.popup-topics {
+    position: fixed;
+    max-width: calc(700px - 2rem);
+    max-height: calc(100vh - 300px);
+    overflow: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+
+    &__heading {
+        .img {
+            width: 43px;
+        }
+    }
+}

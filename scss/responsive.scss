@@ -44,6 +44,20 @@
     .recenly__list {
         grid-gap: 1rem;
     }
+
+    // --------------------------------------------------------------------cate
+    .cate {
+        &-primary {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        &-primary__list {
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 1rem;
+        }
+    }
+
+    // --------------------------------------------------------------------detail
 }
 
 // max width 768px
@@ -65,6 +79,20 @@
     .recenly__list {
         grid-template-columns: repeat(4, 1fr);
     }
+
+    // --------------------------------------------------------------------cate
+    .cate {
+        &-primary {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        &-primary__list {
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 1rem;
+        }
+    }
+
+    // --------------------------------------------------------------------detail
 }
 
 // max width 640px
@@ -133,6 +161,25 @@
     .category .h3 {
         font-size: 1.25rem;
     }
+    // --------------------------------------------------------------------cate
+    .cate {
+        &-heading {
+            font-size: 2rem;
+            font-weight: bold;
+            padding-top: 1rem;
+        }
+        &-primary,
+        &-heading {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        &-primary__list {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1rem;
+        }
+    }
+
+    // --------------------------------------------------------------------detail
 }
 
 // danh cho man hinh duoi 400px

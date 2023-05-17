@@ -49,6 +49,15 @@
   .recenly__list {
     grid-gap: 1rem;
   }
+
+  .cate-primary {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .cate-primary__list {
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1rem;
+  }
 }
 @media (max-width: 48em) {
   .d-md-none {
@@ -69,6 +78,15 @@
 
   .recenly__list {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .cate-primary {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .cate-primary__list {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
   }
 }
 @media (max-width: 40em) {
@@ -134,6 +152,20 @@
 
   .category .h3 {
     font-size: 1.25rem;
+  }
+
+  .cate-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 1rem;
+  }
+  .cate-primary, .cate-heading {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .cate-primary__list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
   }
 }
 
