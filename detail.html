@@ -569,12 +569,14 @@
                     <li class="item imdb">
                         <a href="#" class="text-link link-decoration fs-14 fw-600">IMDbPro</a>
                     </li>
-                    <li class="item topics d-2xl-flex items-center cursor fs-14 fw-600 hover-bg-009 h-32 border-4">
+                    <li class="item topics d-2xl-flex items-center cursor fs-14 fw-600 h-32 js__popupField">
+                      <div class="hover-bg-009 d-2xl-flex items-center w-full h-full px-12 border-4 js__showPopup">
                         <img src="./images/svg/all-topic.svg" alt="" class="mr-4">
                         <span>All topics</span>
-                        <div class="overlay"></div>
-                        <div class="popup-topics bg-gray-1f w-full">
-                            <div class="popup-topics__close">
+                      </div>
+                      <div class="popup-wrapper js__popupWrapper">
+                        <div class="popup-container popup-topics bg-gray-1f w-full">
+                            <div class="popup-close hover-bg-009 border-full js__closePopup">
                                 <img src="./images/svg/close-w.svg" alt="">
                             </div>
                             <!-- heading -->
@@ -600,7 +602,7 @@
                                 <!-- popular -->
                                 <div class="popular">
                                     <span class="action-item__title d-2xl-block text-yellow-f5c fw-600 fs-12 tracking-166  mb-16">POPULAR</span>
-                                    <ul class="popular-list d-2xl-flex items-center fs-14">
+                                    <ul class="popular-list d-2xl-flex items-center fs-16 fw-400">
                                         <li class="popular-item">
                                             <a href="#" class="popular-link link-decoration d-2xl-flex items-center">Video</a>
                                         </li>
@@ -620,17 +622,136 @@
                                             <a href="#" class="popular-link link-decoration d-2xl-flex items-center">Episode guide</a>
                                         </li>
                                         <li class="popular-item">
-                                            <a href="#" class="popular-link link-decoration d-2xl-flex items-center">IMDbPro <img src="./images/svg/out.svg" alt="" class="popular-icon ml-10"></a>
+                                            <a href="#" class="popular-link link-decoration d-2xl-flex items-center">IMDbPro <img src="./images/svg/out.svg" alt="" class="popular-icon ml-4"></a>
                                         </li>
                                     </ul>
                                 </div>
                                 <!-- end popular -->
+
+                                <!-- presentations -->
+                                <div class="presentations d-2xl-grid col-4">
+                                  <!-- item -->
+                                  <div class="presentation-item">
+                                      <!-- title -->
+                                      <span class="action-item__title d-2xl-block text-yellow-f5c fw-600 fs-12 tracking-166 mb-16">STORYLINE</span>
+                                      <!-- end title -->
+
+                                      <!-- list text -->
+                                      <ul class="fw-400">
+                                        <li class="mb-16">
+                                          <a href="#" class="fs-16 link-decoration">Tagline</a>
+                                        </li>
+                                        <li class="mb-16">
+                                          <a href="#" class="fs-16 link-decoration">Tagline</a>
+                                        </li>
+                                        <li class="mb-16">
+                                          <a href="#" class="fs-16 link-decoration">Tagline</a>
+                                        </li>
+                                      </ul>
+                                      <!-- end list text -->
+                                  </div>
+                                  <!-- end item -->
+                                  <!-- item -->
+                                  <div class="presentation-item">
+                                      <!-- title -->
+                                      <span class="action-item__title d-2xl-block text-yellow-f5c fw-600 fs-12 tracking-166 mb-16">STORYLINE</span>
+                                      <!-- end title -->
+
+                                      <!-- list text -->
+                                      <ul class="fw-400">
+                                        <li class="mb-16">
+                                          <a href="#" class="fs-16 link-decoration">Tagline</a>
+                                        </li>
+                                        <li class="mb-16">
+                                          <a href="#" class="fs-16 link-decoration">Tagline</a>
+                                        </li>
+                                        <li class="mb-16">
+                                          <a href="#" class="fs-16 link-decoration">Tagline</a>
+                                        </li>
+                                      </ul>
+                                      <!-- end list text -->
+                                  </div>
+                                  <!-- end item -->
+                                  <!-- item -->
+                                  <div class="presentation-item">
+                                      <!-- title -->
+                                      <span class="action-item__title d-2xl-block text-yellow-f5c fw-600 fs-12 tracking-166 mb-16">STORYLINE</span>
+                                      <!-- end title -->
+
+                                      <!-- list text -->
+                                      <ul class="fw-400">
+                                        <li class="mb-16">
+                                          <a href="#" class="fs-16 link-decoration">Tagline</a>
+                                        </li>
+                                        <li class="mb-16">
+                                          <a href="#" class="fs-16 link-decoration">Tagline</a>
+                                        </li>
+                                        <li class="mb-16">
+                                          <a href="#" class="fs-16 link-decoration">Tagline</a>
+                                        </li>
+                                      </ul>
+                                      <!-- end list text -->
+                                  </div>
+                                  <!-- end item -->
+                                  <!-- item -->
+                                  <div class="presentation-item">
+                                      <!-- title -->
+                                      <span class="action-item__title d-2xl-block text-yellow-f5c fw-600 fs-12 tracking-166 mb-16">STORYLINE</span>
+                                      <!-- end title -->
+
+                                      <!-- list text -->
+                                      <ul class="fw-400">
+                                        <li class="mb-16">
+                                          <a href="#" class="fs-16 link-decoration">Tagline</a>
+                                        </li>
+                                        <li class="mb-16">
+                                          <a href="#" class="fs-16 link-decoration">Tagline</a>
+                                        </li>
+                                        <li class="mb-16">
+                                          <a href="#" class="fs-16 link-decoration">Tagline</a>
+                                        </li>
+                                      </ul>
+                                      <!-- end list text -->
+                                  </div>
+                                  <!-- end item -->
+                                </div>
+                                <!-- end presentation -->
                             </div>
                             <!-- end container -->
                         </div>
+                        <div class="overlay"></div>
+                      </div>
                     </li>
-                    <li class="item cursor share h-48 w-48 border-full hover-bg-009 d-2xl-flex items-center justify-center">
+                    <li class="item cursor share position-relative hover-show-dropdown">
+                      <div class=" h-48 w-48 border-full hover-bg-009 d-2xl-flex items-center justify-center">
                         <img src="./images/svg/share.svg" alt="">
+                      </div>
+
+                      <!-- dropdown -->
+                      <div class="detail-dropdown bg-gray-1f py-8 border-4">
+                        <a href="#" class="detail-dropdown-item d-2xl-flex items-center h-48 px-16 hover-bg-009">
+                          <img src="./images/svg/fb-silver.svg" alt="" class="mr-12">
+                          <span class="fs-16">Facebook</span>
+                        </a>
+                        <a href="#" class="detail-dropdown-item d-2xl-flex items-center h-48 px-16 hover-bg-009">
+                          <img src="./images/svg/twitter-silver.svg" alt="" class="mr-12">
+                          <span class="fs-16">Twitter</span>
+                        </a>
+                        <a href="#" class="detail-dropdown-item d-2xl-flex items-center h-48 px-16 hover-bg-009">
+                          <img src="./images/svg/email-silver.svg" alt="" class="mr-12">
+                          <span class="fs-16">Email Link</span>
+                        </a>
+                        <div class="detail-dropdown-item detail-dropdown-copy-link d-2xl-flex items-center h-48 px-16 hover-bg-009 js__copyLink ">
+                          <img src="./images/svg/copy-link-silver.svg" alt="" class="mr-12">
+                          <span class="fs-16">Coppy Link</span>
+                        </div>
+                        <a href="#" class="detail-dropdown-item detail-dropdown-share d-2xl-flex items-center h-48 px-16 hover-bg-009">
+                          <span class="fs-16">Share IMDb rating</span>
+                          <img src="./images/svg/arrow-next-silver.svg" alt="" class="ml-12">
+                        </a>
+                      </div>
+                      <!-- end dropdown -->
+
                     </li>
                 </ul>
                 <!-- end list -->
@@ -716,9 +837,700 @@
                 <!-- end right -->
             </div>
             <!-- end heading -->
+
+            <!-- video -->
+            <div class="detail-video pb-12">
+              <div class="main-primary-left__item item position-relative w-full">
+                <!-- image -->
+                <a href="#" class="main-primary-left__img detail-video__img image-wrapper">
+                  <img src="./images/2.jpg" alt="" class="">
+                </a>
+                <!-- end image -->
+                <!-- content -->
+                <div class="main-primary-left__content detail-video__content px-16 position-absolute d-2xl-flex w-full">
+                  <!-- text -->
+                  <a href="#" class="detail-video__link d-2xl-flex flex-1 items-center mb-16">
+                    <svg width="60" height="60" xmlns="http://www.w3.org/2000/svg" class="detail-video__icon mr-8" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path d="M10.803 15.932l4.688-3.513a.498.498 0 0 0 0-.803l-4.688-3.514a.502.502 0 0 0-.803.402v7.026c0 .412.472.653.803.402z"></path><path d="M12 24C5.373 24 0 18.627 0 12S5.373 0 12 0s12 5.373 12 12-5.373 12-12 12zm0-1c6.075 0 11-4.925 11-11S18.075 1 12 1 1 5.925 1 12s4.925 11 11 11z"></path></svg>
+                    <div class="d-2xl-flex detail-video__text">
+                      <h2 class="detail-video__title fs-24 lh-24 mr-8">Play trailer</h2>
+                      <p class="detail-video__time fs-16 lh-24 tracking-0125">2:21</p>
+                    </div>
+                  </a>
+                  <!-- end text -->
+                </div>
+                <!-- end content -->
+              </div>
+            </div>
+            <!-- end video -->
+
+            <!-- bot -->
+            <div class="detail-primary__bot d-2xl-flex items-center justify-between">
+              <!-- left -->
+              <div class="detail-primary__bot-left mb-12">
+                <!-- chip list -->
+                <ul class="chip-list d-2xl-flex items-center fs-14">
+                  <li class="chip-item">
+                    <a href="#" class="chip-link tracking-0125 hover-bg-009">Action</a>
+                  </li>
+                  <li class="chip-item">
+                    <a href="#" class="chip-link tracking-0125 hover-bg-009">Adventure</a>
+                  </li>
+                  <li class="chip-item">
+                    <a href="#" class="chip-link tracking-0125 hover-bg-009">Comedy</a>
+                  </li>
+                </ul>
+                <!-- end chip list -->
+
+                <!-- sapo -->
+                <p class="detail-primary__bot-sapo tracking-03125 fs-16 lh-24 mb-12">The Guardians struggle to keep together as a team while dealing with their personal family issues, notably Star-Lord's encounter with his father, the ambitious celestial being Ego.</p>
+                <!--end  sapo -->
+
+                <!-- meta data -->
+                <div class="meta-data d-2xl-flex items-center py-12 position-relative">
+                  <a href="#" class="meta-data__title d-2xl-block pr-12 fw-500 tracking-073">Starts</a>
+                  <ul class="meta-data__list d-2xl-flex items-center">
+                    <li class="meta-data__item text-blue-579 ">
+                      <a href="#" class="meta-data__link tracking-03125 lh-24 link-decoration">Chris Pratt</a>
+                    </li>
+                    <li class="meta-data__item text-blue-579 ">
+                      <a href="#" class="meta-data__link tracking-03125 lh-24 link-decoration">Chris Pratt</a>
+                    </li>
+                    <li class="meta-data__item text-blue-579 ">
+                      <a href="#" class="meta-data__link tracking-03125 lh-24 link-decoration">Chris Pratt</a>
+                    </li>
+                  </ul>
+                  <a href="#" class="meta-data__next position-absolute w-full h-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M9.29 6.71a.996.996 0 0 0 0 1.41L13.17 12l-3.88 3.88a.996.996 0 1 0 1.41 1.41l4.59-4.59a.996.996 0 0 0 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01z"></path></svg>
+                  </a>
+                </div>
+                <!-- end meta data -->
+                
+              </div>
+              <!-- end left -->
+              <!-- right -->
+              <div class="detail-primary__bot-right">
+                <!-- btn add to watch list -->
+                <div class="d-2xl-flex items-center">
+                  <!-- add to watch list large-->
+                  <div class="add-to-watch-large d-2xl-flex items-centert hover-bg-009 flex-1 bg-white-006 h-48 cursor">
+                    <img src="./images/svg/plus.svg" alt="" class="add-to-watch-large__img mr-4">
+                    <div class="add-to-watch-large__content">
+                      <div class="add-to-watch-large__text fs-14 fw-600 mb-4">Add to Watchlist</div>
+                      <div class="add-to-watch-large__count fs-12 text-white-70 tracking-03125">Added by 560K users</div>
+                    </div>
+                  </div>
+                  <!-- end add to watch list large-->
+                  <!-- add to watch list small-->
+                  <div class="add-to-watch-small d-2xl-flex items-center justify-center flex-0 hover-bg-009 h-48 w-48 cursor bg-white-006">
+                    <img src="./images/svg/down-arrow.svg" alt="" class="add-to-watch-small__img">
+                  </div>
+                  <!-- end add to watch list small-->
+                </div>
+                <!-- end btn add to watch list -->
+
+                <!-- reviewer -->
+                <ul class="detail-primary__bot-reviewer mt-12 d-2xl-flex items-center">
+                  <li class="detail-primary__bot-reviewer-item text-blue-579 mr-16">
+                    <a href="#" class="link-decoration py-8 d-2xl-flex items-center">
+                      <span class="fs-16 mr-4 fw-600">257</span>
+                      <span class="fs-14">User reviews</span>
+                    </a>
+                  </li>
+                  <li class="detail-primary__bot-reviewer-item text-blue-579 mr-16">
+                    <a href="#" class="link-decoration py-8 d-2xl-flex items-center">
+                      <span class="fs-16 mr-4 fw-600">257</span>
+                      <span class="fs-14">User reviews</span>
+                    </a>
+                  </li>
+                </ul>
+                <!-- end reviewer -->
+
+              </div>
+              <!-- end right -->
+            </div>
+            <!-- end bot -->
         </div>
         </section>
         <!-- end primary -->
+
+        <!-- secondary -->
+        <section class="detail-secondary-wrapper bg-white">
+          <div class="w-1280">
+              <div class="detail-secondary d-2xl-grid">
+                <!-- left -->
+                <div class="detail-secondary-left">
+                  
+                  <!-- photos -->
+                  <div class="photos-box py-24 mb-8">
+                    <!-- heading -->
+                    <div class="heading d-2xl-flex items-center justify-between mb-24 px-24">
+                      <a href="#" class="link d-2xl-flex items-center">
+                        <h2 class="title border-left-yellow fs-32 lh-40 tracking-073 fw-600 text-black pl-12">Photos</h2>
+                        <p class="count fs-14 text-black-54 pl-12">20</p>
+                        <div class="icon text-black d-2xl-flex items-center justify-center">
+                          <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="currentColor" role="presentation"><path d="M5.622.631A2.153 2.153 0 0 0 5 2.147c0 .568.224 1.113.622 1.515l8.249 8.34-8.25 8.34a2.16 2.16 0 0 0-.548 2.07c.196.74.768 1.317 1.499 1.515a2.104 2.104 0 0 0 2.048-.555l9.758-9.866a2.153 2.153 0 0 0 0-3.03L8.62.61C7.812-.207 6.45-.207 5.622.63z"></path></svg>
+                        </div>
+                      </a>
+                    </div>
+                    <!-- end heading -->
+
+                    <!-- container -->
+                    <div class="main-secondary__list">
+                      <div class="swiper js_fourItems px-24">
+                        <div class="swiper-wrapper">
+                          <!-- item -->
+                          <div class="swiper-slide">
+                            <div class="main-secondary__item">
+                              <!-- img -->
+                              <a href="#" class="main-secondary__img image-wrapper-full">
+                                <img src="./images/2.jpg" alt="">
+                              </a>
+                              <!-- end img -->
+                            </div>
+                          </div>
+                          <!-- end item -->
+                          <!-- item -->
+                          <div class="swiper-slide">
+                            <div class="main-secondary__item">
+                              <!-- img -->
+                              <a href="#" class="main-secondary__img image-wrapper-full">
+                                <img src="./images/2.jpg" alt="">
+                              </a>
+                              <!-- end img -->
+                            </div>
+                          </div>
+                          <!-- end item -->
+                          <!-- item -->
+                          <div class="swiper-slide">
+                            <div class="main-secondary__item">
+                              <!-- img -->
+                              <a href="#" class="main-secondary__img image-wrapper-full">
+                                <img src="./images/2.jpg" alt="">
+                              </a>
+                              <!-- end img -->
+                            </div>
+                          </div>
+                          <!-- end item -->
+                          <!-- item -->
+                          <div class="swiper-slide">
+                            <div class="main-secondary__item">
+                              <!-- img -->
+                              <a href="#" class="main-secondary__img image-wrapper-full">
+                                <img src="./images/2.jpg" alt="">
+                              </a>
+                              <!-- end img -->
+                            </div>
+                          </div>
+                          <!-- end item -->
+                          <!-- item -->
+                          <div class="swiper-slide">
+                            <div class="main-secondary__item">
+                              <!-- img -->
+                              <a href="#" class="main-secondary__img image-wrapper-full">
+                                <img src="./images/2.jpg" alt="">
+                              </a>
+                              <!-- end img -->
+                            </div>
+                          </div>
+                          <!-- end item -->
+                          <!-- item -->
+                          <div class="swiper-slide">
+                            <div class="main-secondary__item">
+                              <!-- img -->
+                              <a href="#" class="main-secondary__img image-wrapper-full">
+                                <img src="./images/2.jpg" alt="">
+                              </a>
+                              <!-- end img -->
+                            </div>
+                          </div>
+                          <!-- end item -->
+                          
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                      </div>
+                    </div>
+                    <!-- end container -->
+                  </div>
+                  <!-- end photos -->
+
+                  <!-- storyline -->
+                  <div class="storyline py-24 mb-8">
+                    <!-- heading -->
+                    <div class="heading d-2xl-flex items-center justify-between mb-24 px-24">
+                      <div class="link d-2xl-flex items-center">
+                        <h2 class="title border-left-yellow fs-32 lh-40 tracking-073 fw-600 text-black pl-12">Storyline</h2>
+                      </div>
+                      <!-- <div class="text-black-54">
+                        <a href="#" class="d-2xl-flex items-center h-32 px-8 hover-bg-054 border-4">
+                          <img src="./images/svg/edit.svg" alt="">
+                          <span class="ml-4 lh-20 fs-14 fw-600">Edit</span>
+                        </a>
+                      </div> -->
+                    </div>
+                    <!-- end heading -->
+
+                    <!-- text -->
+                    <div class="detail-content-text px-24">
+                      <p>
+                        Having set up a new base on Knowhere after the events in 
+                        <a href="#">Avengers: Hồi Kết (2019)</a>
+                         and 
+                         <a href="#">Thor: Tình Yêu Và Sấm Sét (2022)</a>, the 
+                         <a  href="#">Vệ Binh Dải Ngân Hà (2014)</a> try to settle in on the edge of the Galactic Rim. But when Kraglin, the Xandarian, shares a story of a Christmas gone wrong for Peter Quill, aka the Star-Lord, Insectoid/Celestial hybrid Mantis and Drax the Destroyer embark on a time-sensitive mission to give Peter a merrier holiday memory. However, the Earth is a strange, complicated place. Will Mantis and Drax surprise Peter with the best Christmas gift ever?
+                      </p>
+                      <!-- end text -->
+                    </div>
+                  </div>
+                  <!-- end storyline -->
+
+                  <!-- user reviewer -->
+                  <div class="user-reviewer py-24 mb-8">
+                    <!-- heading -->
+                    <div class="heading d-2xl-flex items-center justify-between mb-24 px-24">
+                      <div class="link d-2xl-flex items-center">
+                        <h2 class="title border-left-yellow fs-32 lh-40 tracking-073 fw-600 text-black pl-12">User reviewer</h2>
+                        <p class="count fs-14 text-black-54 pl-12">20</p>
+                        <div class="icon text-black d-2xl-flex items-center justify-center">
+                          <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="currentColor" role="presentation"><path d="M5.622.631A2.153 2.153 0 0 0 5 2.147c0 .568.224 1.113.622 1.515l8.249 8.34-8.25 8.34a2.16 2.16 0 0 0-.548 2.07c.196.74.768 1.317 1.499 1.515a2.104 2.104 0 0 0 2.048-.555l9.758-9.866a2.153 2.153 0 0 0 0-3.03L8.62.61C7.812-.207 6.45-.207 5.622.63z"></path></svg>
+                        </div>
+                      </div>
+                      <div class="text-blue-579">
+                        <a href="#" class="d-2xl-flex items-center h-32 px-8 hover-blue-008 border-4">
+                          <img src="./images/svg/plus-blue.svg" alt="">
+                          <span class="ml-4 lh-20 fs-14 fw-600">Review</span>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- end heading -->
+
+                    <!-- text -->
+                    <div class="detail-content-text px-24">
+                      <div class="content-reviewer p-16 mb-24">
+                        <div class="content-reviewer__top d-2xl-flex items-center justify-between mb-16">
+                          <div class="review-featured uppercase position-relative fw-600 lh-16 fs-12 bg--yellow-f5c tracking-166">
+                            <div class="featured-text">featured review</div>
+                          </div>
+                          <div class="rating-vote d-2xl-flex items-center">
+                            <img src="./images/svg/start-yellow.svg" alt="" class="rating-vote__img">
+                            <span class="rating-vote__text text-black-38">7/10</span>
+                          </div>
+                        </div>
+                        <h3 class="fs-20 lh-24 tracking-0125 fw-600 mb-12">This holiday special is better than other sci-fi holiday specials I could name.</h3>
+                        <p>
+                          The Guardians of the Galaxy Holiday Special is much better than the Star Wars Holiday Special, though it may not be as memorable. This is a simple story about an inconsequential adventure for Drax &amp; Mantis, who actually work pretty well as a comedic duo. And since it's a short Christmas tale, problems are resolved with a wave (or touch) of the hand, and the ending is wrapped up nicely with a little bow. I do wish they hadn't tried to cram modern Christmas hits in every couple of minutes--that was a little distracting. Still, this is better than most of the stuff we've gotten in Phase 4 of the MCU.
+                        </p>
+                      </div>
+                      <!-- end text -->
+                    </div>
+
+                    <!-- reviews author -->
+                    <ul class="review-auhtor d-2xl-flex items-center fs-14 px-24">
+                      <li class="review-auhtor__item text-blue-579">
+                        <a href="#" class="link-decoration">cricketbat</a>
+                      </li>
+                      <li class="review-auhtor__item text-black">Nov 30, 2022</li>
+                    </ul>
+                    <!-- end reviews author -->
+                  </div>
+                  <!-- end user reviewer -->
+
+                  <!-- more like this -->
+                  <div class="more-like py-24 mb-8">
+                    <!-- heading -->
+                    <div class="heading d-2xl-flex items-center justify-between mb-24 px-24">
+                      <a href="#" class="link d-2xl-flex items-center">
+                        <h2 class="title border-left-yellow fs-32 lh-40 tracking-073 fw-600 text-black pl-12">More like this</h2>
+                      </a>
+                      <div class="text-black-54">
+                        <a href="#" class="d-2xl-flex items-center h-48 w-48 p-12 hover-bg-054 border-full">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-4h2v2h-2zm1.61-9.96c-2.06-.3-3.88.97-4.43 2.79-.18.58.26 1.17.87 1.17h.2c.41 0 .74-.29.88-.67.32-.89 1.27-1.5 2.3-1.28.95.2 1.65 1.13 1.57 2.1-.1 1.34-1.62 1.63-2.45 2.88 0 .01-.01.01-.01.02-.01.02-.02.03-.03.05-.09.15-.18.32-.25.5-.01.03-.03.05-.04.08-.01.02-.01.04-.02.07-.12.34-.2.75-.2 1.25h2c0-.42.11-.77.28-1.07.02-.03.03-.06.05-.09.08-.14.18-.27.28-.39.01-.01.02-.03.03-.04.1-.12.21-.23.33-.34.96-.91 2.26-1.65 1.99-3.56-.24-1.74-1.61-3.21-3.35-3.47z"></path></svg>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- end heading -->
+
+                    <!-- container -->
+                    <div class="main-secondary__list">
+                      <div class="swiper js_fourItems px-24">
+                        <div class="swiper-wrapper">
+                          <!-- item -->
+                          <div class="swiper-slide">
+                            <div class="main-secondary__item shadow mb-4">
+                              <!-- img -->
+                              <a href="#" class="main-secondary__img image-wrapper-vertical">
+                                <img src="./images/1.jpg" alt="">
+                              </a>
+                              <!-- end img -->
+                  
+                              <!-- content -->
+                              <div class="main-secondary__content bg-white p-8">
+                                <!-- start -->
+                                <div class="d-2xl-flex items-center fs-16 h-36">
+                                  <div class="text-yellow-f5c mr-4">
+                                    <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" class="ipc-icon ipc-icon--star-inline" id="iconContext-star-inline" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path d="M12 20.1l5.82 3.682c1.066.675 2.37-.322 2.09-1.584l-1.543-6.926 5.146-4.667c.94-.85.435-2.465-.799-2.567l-6.773-.602L13.29.89a1.38 1.38 0 0 0-2.581 0l-2.65 6.53-6.774.602C.052 8.126-.453 9.74.486 10.59l5.147 4.666-1.542 6.926c-.28 1.262 1.023 2.26 2.09 1.585L12 20.099z"></path></svg>
+                                  </div>
+                                  <span class="text-black-54">6.3</span>
+                                </div>
+                                <!-- end start -->
+                                <!-- title -->
+                                <h3 class="fix-text2 h-40 mb-12 text-black-87">
+                                  <a href="#" class="h-full tracking-0125 lh-20 link-decoration">Cô Maisel Kỳ Diệu</a>
+                                </h3>
+                                <!-- end title  -->
+                  
+                                <div class="text-blue-579">
+                                  <a href="#" class="d-2xl-flex items-center justify-center px-16 h-36 mb-8 text-blue-579 fw-500 lh-20 border-4 hover-blue-008 bg-black-008 fs-14">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mr-4" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path d="M18 13h-5v5c0 .55-.45 1-1 1s-1-.45-1-1v-5H6c-.55 0-1-.45-1-1s.45-1 1-1h5V6c0-.55.45-1 1-1s1 .45 1 1v5h5c.55 0 1 .45 1 1s-.45 1-1 1z"></path></svg>
+                                    Watchlist </a>
+                                </div>
+                  
+                                <div class="d-2xl-flex items-center justify-between text-black">
+                                  <a href="#" class="fw-600 d-2xl-inline-flex items-center justify-center px-16 hover-bg-054 h-36 border-4 fs-14">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path d="M8 6.82v10.36c0 .79.87 1.27 1.54.84l8.14-5.18a1 1 0 0 0 0-1.69L9.54 5.98A.998.998 0 0 0 8 6.82z"></path></svg>
+                                    Trailer
+                                  </a>
+                                  <div class="text-black-54">
+                                    <a href="#" class="d-2xl-flex items-center h-48 w-48 p-12 hover-bg-054 border-full">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-4h2v2h-2zm1.61-9.96c-2.06-.3-3.88.97-4.43 2.79-.18.58.26 1.17.87 1.17h.2c.41 0 .74-.29.88-.67.32-.89 1.27-1.5 2.3-1.28.95.2 1.65 1.13 1.57 2.1-.1 1.34-1.62 1.63-2.45 2.88 0 .01-.01.01-.01.02-.01.02-.02.03-.03.05-.09.15-.18.32-.25.5-.01.03-.03.05-.04.08-.01.02-.01.04-.02.07-.12.34-.2.75-.2 1.25h2c0-.42.11-.77.28-1.07.02-.03.03-.06.05-.09.08-.14.18-.27.28-.39.01-.01.02-.03.03-.04.1-.12.21-.23.33-.34.96-.91 2.26-1.65 1.99-3.56-.24-1.74-1.61-3.21-3.35-3.47z"></path></svg>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- end content -->
+                            </div>
+                          </div>
+                          <!-- end item -->
+                          <!-- item -->
+                          <div class="swiper-slide">
+                            <div class="main-secondary__item shadow mb-4">
+                              <!-- img -->
+                              <a href="#" class="main-secondary__img image-wrapper-vertical">
+                                <img src="./images/1.jpg" alt="">
+                              </a>
+                              <!-- end img -->
+                  
+                              <!-- content -->
+                              <div class="main-secondary__content bg-white p-8">
+                                <!-- start -->
+                                <div class="d-2xl-flex items-center fs-16 h-36">
+                                  <div class="text-yellow-f5c mr-4">
+                                    <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" class="ipc-icon ipc-icon--star-inline" id="iconContext-star-inline" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path d="M12 20.1l5.82 3.682c1.066.675 2.37-.322 2.09-1.584l-1.543-6.926 5.146-4.667c.94-.85.435-2.465-.799-2.567l-6.773-.602L13.29.89a1.38 1.38 0 0 0-2.581 0l-2.65 6.53-6.774.602C.052 8.126-.453 9.74.486 10.59l5.147 4.666-1.542 6.926c-.28 1.262 1.023 2.26 2.09 1.585L12 20.099z"></path></svg>
+                                  </div>
+                                  <span class="text-black-54">6.3</span>
+                                </div>
+                                <!-- end start -->
+                                <!-- title -->
+                                <h3 class="fix-text2 h-40 mb-12 text-black-87">
+                                  <a href="#" class="h-full tracking-0125 lh-20 link-decoration">Cô Maisel Kỳ Diệu</a>
+                                </h3>
+                                <!-- end title  -->
+                  
+                                <div class="text-blue-579">
+                                  <a href="#" class="d-2xl-flex items-center justify-center px-16 h-36 mb-8 text-blue-579 fw-500 lh-20 border-4 hover-blue-008 bg-black-008 fs-14">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mr-4" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path d="M18 13h-5v5c0 .55-.45 1-1 1s-1-.45-1-1v-5H6c-.55 0-1-.45-1-1s.45-1 1-1h5V6c0-.55.45-1 1-1s1 .45 1 1v5h5c.55 0 1 .45 1 1s-.45 1-1 1z"></path></svg>
+                                    Watchlist </a>
+                                </div>
+                  
+                                <div class="d-2xl-flex items-center justify-between text-black">
+                                  <a href="#" class="fw-600 d-2xl-inline-flex items-center justify-center px-16 hover-bg-054 h-36 border-4 fs-14">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path d="M8 6.82v10.36c0 .79.87 1.27 1.54.84l8.14-5.18a1 1 0 0 0 0-1.69L9.54 5.98A.998.998 0 0 0 8 6.82z"></path></svg>
+                                    Trailer
+                                  </a>
+                                  <div class="text-black-54">
+                                    <a href="#" class="d-2xl-flex items-center h-48 w-48 p-12 hover-bg-054 border-full">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-4h2v2h-2zm1.61-9.96c-2.06-.3-3.88.97-4.43 2.79-.18.58.26 1.17.87 1.17h.2c.41 0 .74-.29.88-.67.32-.89 1.27-1.5 2.3-1.28.95.2 1.65 1.13 1.57 2.1-.1 1.34-1.62 1.63-2.45 2.88 0 .01-.01.01-.01.02-.01.02-.02.03-.03.05-.09.15-.18.32-.25.5-.01.03-.03.05-.04.08-.01.02-.01.04-.02.07-.12.34-.2.75-.2 1.25h2c0-.42.11-.77.28-1.07.02-.03.03-.06.05-.09.08-.14.18-.27.28-.39.01-.01.02-.03.03-.04.1-.12.21-.23.33-.34.96-.91 2.26-1.65 1.99-3.56-.24-1.74-1.61-3.21-3.35-3.47z"></path></svg>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- end content -->
+                            </div>
+                          </div>
+                          <!-- end item -->
+                          <!-- item -->
+                          <div class="swiper-slide">
+                            <div class="main-secondary__item shadow mb-4">
+                              <!-- img -->
+                              <a href="#" class="main-secondary__img image-wrapper-vertical">
+                                <img src="./images/1.jpg" alt="">
+                              </a>
+                              <!-- end img -->
+                  
+                              <!-- content -->
+                              <div class="main-secondary__content bg-white p-8">
+                                <!-- start -->
+                                <div class="d-2xl-flex items-center fs-16 h-36">
+                                  <div class="text-yellow-f5c mr-4">
+                                    <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" class="ipc-icon ipc-icon--star-inline" id="iconContext-star-inline" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path d="M12 20.1l5.82 3.682c1.066.675 2.37-.322 2.09-1.584l-1.543-6.926 5.146-4.667c.94-.85.435-2.465-.799-2.567l-6.773-.602L13.29.89a1.38 1.38 0 0 0-2.581 0l-2.65 6.53-6.774.602C.052 8.126-.453 9.74.486 10.59l5.147 4.666-1.542 6.926c-.28 1.262 1.023 2.26 2.09 1.585L12 20.099z"></path></svg>
+                                  </div>
+                                  <span class="text-black-54">6.3</span>
+                                </div>
+                                <!-- end start -->
+                                <!-- title -->
+                                <h3 class="fix-text2 h-40 mb-12 text-black-87">
+                                  <a href="#" class="h-full tracking-0125 lh-20 link-decoration">Cô Maisel Kỳ Diệu</a>
+                                </h3>
+                                <!-- end title  -->
+                  
+                                <div class="text-blue-579">
+                                  <a href="#" class="d-2xl-flex items-center justify-center px-16 h-36 mb-8 text-blue-579 fw-500 lh-20 border-4 hover-blue-008 bg-black-008 fs-14">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mr-4" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path d="M18 13h-5v5c0 .55-.45 1-1 1s-1-.45-1-1v-5H6c-.55 0-1-.45-1-1s.45-1 1-1h5V6c0-.55.45-1 1-1s1 .45 1 1v5h5c.55 0 1 .45 1 1s-.45 1-1 1z"></path></svg>
+                                    Watchlist </a>
+                                </div>
+                  
+                                <div class="d-2xl-flex items-center justify-between text-black">
+                                  <a href="#" class="fw-600 d-2xl-inline-flex items-center justify-center px-16 hover-bg-054 h-36 border-4 fs-14">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path d="M8 6.82v10.36c0 .79.87 1.27 1.54.84l8.14-5.18a1 1 0 0 0 0-1.69L9.54 5.98A.998.998 0 0 0 8 6.82z"></path></svg>
+                                    Trailer
+                                  </a>
+                                  <div class="text-black-54">
+                                    <a href="#" class="d-2xl-flex items-center h-48 w-48 p-12 hover-bg-054 border-full">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-4h2v2h-2zm1.61-9.96c-2.06-.3-3.88.97-4.43 2.79-.18.58.26 1.17.87 1.17h.2c.41 0 .74-.29.88-.67.32-.89 1.27-1.5 2.3-1.28.95.2 1.65 1.13 1.57 2.1-.1 1.34-1.62 1.63-2.45 2.88 0 .01-.01.01-.01.02-.01.02-.02.03-.03.05-.09.15-.18.32-.25.5-.01.03-.03.05-.04.08-.01.02-.01.04-.02.07-.12.34-.2.75-.2 1.25h2c0-.42.11-.77.28-1.07.02-.03.03-.06.05-.09.08-.14.18-.27.28-.39.01-.01.02-.03.03-.04.1-.12.21-.23.33-.34.96-.91 2.26-1.65 1.99-3.56-.24-1.74-1.61-3.21-3.35-3.47z"></path></svg>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- end content -->
+                            </div>
+                          </div>
+                          <!-- end item -->
+                          <!-- item -->
+                          <div class="swiper-slide">
+                            <div class="main-secondary__item shadow mb-4">
+                              <!-- img -->
+                              <a href="#" class="main-secondary__img image-wrapper-vertical">
+                                <img src="./images/1.jpg" alt="">
+                              </a>
+                              <!-- end img -->
+                  
+                              <!-- content -->
+                              <div class="main-secondary__content bg-white p-8">
+                                <!-- start -->
+                                <div class="d-2xl-flex items-center fs-16 h-36">
+                                  <div class="text-yellow-f5c mr-4">
+                                    <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" class="ipc-icon ipc-icon--star-inline" id="iconContext-star-inline" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path d="M12 20.1l5.82 3.682c1.066.675 2.37-.322 2.09-1.584l-1.543-6.926 5.146-4.667c.94-.85.435-2.465-.799-2.567l-6.773-.602L13.29.89a1.38 1.38 0 0 0-2.581 0l-2.65 6.53-6.774.602C.052 8.126-.453 9.74.486 10.59l5.147 4.666-1.542 6.926c-.28 1.262 1.023 2.26 2.09 1.585L12 20.099z"></path></svg>
+                                  </div>
+                                  <span class="text-black-54">6.3</span>
+                                </div>
+                                <!-- end start -->
+                                <!-- title -->
+                                <h3 class="fix-text2 h-40 mb-12 text-black-87">
+                                  <a href="#" class="h-full tracking-0125 lh-20 link-decoration">Cô Maisel Kỳ Diệu</a>
+                                </h3>
+                                <!-- end title  -->
+                  
+                                <div class="text-blue-579">
+                                  <a href="#" class="d-2xl-flex items-center justify-center px-16 h-36 mb-8 text-blue-579 fw-500 lh-20 border-4 hover-blue-008 bg-black-008 fs-14">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mr-4" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path d="M18 13h-5v5c0 .55-.45 1-1 1s-1-.45-1-1v-5H6c-.55 0-1-.45-1-1s.45-1 1-1h5V6c0-.55.45-1 1-1s1 .45 1 1v5h5c.55 0 1 .45 1 1s-.45 1-1 1z"></path></svg>
+                                    Watchlist </a>
+                                </div>
+                  
+                                <div class="d-2xl-flex items-center justify-between text-black">
+                                  <a href="#" class="fw-600 d-2xl-inline-flex items-center justify-center px-16 hover-bg-054 h-36 border-4 fs-14">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path d="M8 6.82v10.36c0 .79.87 1.27 1.54.84l8.14-5.18a1 1 0 0 0 0-1.69L9.54 5.98A.998.998 0 0 0 8 6.82z"></path></svg>
+                                    Trailer
+                                  </a>
+                                  <div class="text-black-54">
+                                    <a href="#" class="d-2xl-flex items-center h-48 w-48 p-12 hover-bg-054 border-full">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-4h2v2h-2zm1.61-9.96c-2.06-.3-3.88.97-4.43 2.79-.18.58.26 1.17.87 1.17h.2c.41 0 .74-.29.88-.67.32-.89 1.27-1.5 2.3-1.28.95.2 1.65 1.13 1.57 2.1-.1 1.34-1.62 1.63-2.45 2.88 0 .01-.01.01-.01.02-.01.02-.02.03-.03.05-.09.15-.18.32-.25.5-.01.03-.03.05-.04.08-.01.02-.01.04-.02.07-.12.34-.2.75-.2 1.25h2c0-.42.11-.77.28-1.07.02-.03.03-.06.05-.09.08-.14.18-.27.28-.39.01-.01.02-.03.03-.04.1-.12.21-.23.33-.34.96-.91 2.26-1.65 1.99-3.56-.24-1.74-1.61-3.21-3.35-3.47z"></path></svg>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- end content -->
+                            </div>
+                          </div>
+                          <!-- end item -->
+                          <!-- item -->
+                          <div class="swiper-slide">
+                            <div class="main-secondary__item shadow mb-4">
+                              <!-- img -->
+                              <a href="#" class="main-secondary__img image-wrapper-vertical">
+                                <img src="./images/1.jpg" alt="">
+                              </a>
+                              <!-- end img -->
+                  
+                              <!-- content -->
+                              <div class="main-secondary__content bg-white p-8">
+                                <!-- start -->
+                                <div class="d-2xl-flex items-center fs-16 h-36">
+                                  <div class="text-yellow-f5c mr-4">
+                                    <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" class="ipc-icon ipc-icon--star-inline" id="iconContext-star-inline" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path d="M12 20.1l5.82 3.682c1.066.675 2.37-.322 2.09-1.584l-1.543-6.926 5.146-4.667c.94-.85.435-2.465-.799-2.567l-6.773-.602L13.29.89a1.38 1.38 0 0 0-2.581 0l-2.65 6.53-6.774.602C.052 8.126-.453 9.74.486 10.59l5.147 4.666-1.542 6.926c-.28 1.262 1.023 2.26 2.09 1.585L12 20.099z"></path></svg>
+                                  </div>
+                                  <span class="text-black-54">6.3</span>
+                                </div>
+                                <!-- end start -->
+                                <!-- title -->
+                                <h3 class="fix-text2 h-40 mb-12 text-black-87">
+                                  <a href="#" class="h-full tracking-0125 lh-20 link-decoration">Cô Maisel Kỳ Diệu</a>
+                                </h3>
+                                <!-- end title  -->
+                  
+                                <div class="text-blue-579">
+                                  <a href="#" class="d-2xl-flex items-center justify-center px-16 h-36 mb-8 text-blue-579 fw-500 lh-20 border-4 hover-blue-008 bg-black-008 fs-14">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mr-4" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path d="M18 13h-5v5c0 .55-.45 1-1 1s-1-.45-1-1v-5H6c-.55 0-1-.45-1-1s.45-1 1-1h5V6c0-.55.45-1 1-1s1 .45 1 1v5h5c.55 0 1 .45 1 1s-.45 1-1 1z"></path></svg>
+                                    Watchlist </a>
+                                </div>
+                  
+                                <div class="d-2xl-flex items-center justify-between text-black">
+                                  <a href="#" class="fw-600 d-2xl-inline-flex items-center justify-center px-16 hover-bg-054 h-36 border-4 fs-14">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path d="M8 6.82v10.36c0 .79.87 1.27 1.54.84l8.14-5.18a1 1 0 0 0 0-1.69L9.54 5.98A.998.998 0 0 0 8 6.82z"></path></svg>
+                                    Trailer
+                                  </a>
+                                  <div class="text-black-54">
+                                    <a href="#" class="d-2xl-flex items-center h-48 w-48 p-12 hover-bg-054 border-full">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-4h2v2h-2zm1.61-9.96c-2.06-.3-3.88.97-4.43 2.79-.18.58.26 1.17.87 1.17h.2c.41 0 .74-.29.88-.67.32-.89 1.27-1.5 2.3-1.28.95.2 1.65 1.13 1.57 2.1-.1 1.34-1.62 1.63-2.45 2.88 0 .01-.01.01-.01.02-.01.02-.02.03-.03.05-.09.15-.18.32-.25.5-.01.03-.03.05-.04.08-.01.02-.01.04-.02.07-.12.34-.2.75-.2 1.25h2c0-.42.11-.77.28-1.07.02-.03.03-.06.05-.09.08-.14.18-.27.28-.39.01-.01.02-.03.03-.04.1-.12.21-.23.33-.34.96-.91 2.26-1.65 1.99-3.56-.24-1.74-1.61-3.21-3.35-3.47z"></path></svg>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- end content -->
+                            </div>
+                          </div>
+                          <!-- end item -->
+                          <!-- item -->
+                          <div class="swiper-slide">
+                            <div class="main-secondary__item shadow mb-4">
+                              <!-- img -->
+                              <a href="#" class="main-secondary__img image-wrapper-vertical">
+                                <img src="./images/1.jpg" alt="">
+                              </a>
+                              <!-- end img -->
+                  
+                              <!-- content -->
+                              <div class="main-secondary__content bg-white p-8">
+                                <!-- start -->
+                                <div class="d-2xl-flex items-center fs-16 h-36">
+                                  <div class="text-yellow-f5c mr-4">
+                                    <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" class="ipc-icon ipc-icon--star-inline" id="iconContext-star-inline" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path d="M12 20.1l5.82 3.682c1.066.675 2.37-.322 2.09-1.584l-1.543-6.926 5.146-4.667c.94-.85.435-2.465-.799-2.567l-6.773-.602L13.29.89a1.38 1.38 0 0 0-2.581 0l-2.65 6.53-6.774.602C.052 8.126-.453 9.74.486 10.59l5.147 4.666-1.542 6.926c-.28 1.262 1.023 2.26 2.09 1.585L12 20.099z"></path></svg>
+                                  </div>
+                                  <span class="text-black-54">6.3</span>
+                                </div>
+                                <!-- end start -->
+                                <!-- title -->
+                                <h3 class="fix-text2 h-40 mb-12 text-black-87">
+                                  <a href="#" class="h-full tracking-0125 lh-20 link-decoration">Cô Maisel Kỳ Diệu</a>
+                                </h3>
+                                <!-- end title  -->
+                  
+                                <div class="text-blue-579">
+                                  <a href="#" class="d-2xl-flex items-center justify-center px-16 h-36 mb-8 text-blue-579 fw-500 lh-20 border-4 hover-blue-008 bg-black-008 fs-14">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mr-4" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path d="M18 13h-5v5c0 .55-.45 1-1 1s-1-.45-1-1v-5H6c-.55 0-1-.45-1-1s.45-1 1-1h5V6c0-.55.45-1 1-1s1 .45 1 1v5h5c.55 0 1 .45 1 1s-.45 1-1 1z"></path></svg>
+                                    Watchlist </a>
+                                </div>
+                  
+                                <div class="d-2xl-flex items-center justify-between text-black">
+                                  <a href="#" class="fw-600 d-2xl-inline-flex items-center justify-center px-16 hover-bg-054 h-36 border-4 fs-14">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path d="M8 6.82v10.36c0 .79.87 1.27 1.54.84l8.14-5.18a1 1 0 0 0 0-1.69L9.54 5.98A.998.998 0 0 0 8 6.82z"></path></svg>
+                                    Trailer
+                                  </a>
+                                  <div class="text-black-54">
+                                    <a href="#" class="d-2xl-flex items-center h-48 w-48 p-12 hover-bg-054 border-full">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-4h2v2h-2zm1.61-9.96c-2.06-.3-3.88.97-4.43 2.79-.18.58.26 1.17.87 1.17h.2c.41 0 .74-.29.88-.67.32-.89 1.27-1.5 2.3-1.28.95.2 1.65 1.13 1.57 2.1-.1 1.34-1.62 1.63-2.45 2.88 0 .01-.01.01-.01.02-.01.02-.02.03-.03.05-.09.15-.18.32-.25.5-.01.03-.03.05-.04.08-.01.02-.01.04-.02.07-.12.34-.2.75-.2 1.25h2c0-.42.11-.77.28-1.07.02-.03.03-.06.05-.09.08-.14.18-.27.28-.39.01-.01.02-.03.03-.04.1-.12.21-.23.33-.34.96-.91 2.26-1.65 1.99-3.56-.24-1.74-1.61-3.21-3.35-3.47z"></path></svg>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- end content -->
+                            </div>
+                          </div>
+                          <!-- end item -->
+                          
+                          
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                      </div>
+                    </div>
+                    <!-- end container -->
+                  </div>
+                  <!-- end more like this -->
+                </div>
+                <!-- end left -->
+                <!-- right -->
+                <div class="detail-secondary-right pl-12 py-24">
+
+                  <!-- more to explore -->
+                  <div class="more-explore">
+                    <!-- heading -->
+                    <div class="heading d-2xl-flex items-center justify-between mb-24 px-24">
+                      <div class="link d-2xl-flex items-center">
+                        <h2 class="title border-left-yellow fs-32 lh-40 tracking-073 fw-600 text-black pl-12">More To Explore</h2>
+                      </div>
+                    </div>
+                    <!-- end heading -->
+
+                    <!-- box -->
+                    <div class="more-explore__box px-24">
+                      <!-- img -->
+                      <div class="main-primary-left__item item position-relative w-full">
+                        <a href="#" class="main-primary-left__img detail-video__img image-wrapper">
+                          <img src="./images/2.jpg" alt="" class="">
+                        </a>
+                        <!-- content -->
+                        <div class="main-primary-left__content detail-video__content px-12 position-absolute d-2xl-flex w-full">
+                          <!-- text -->
+                          <a href="#" class="detail-video__link d-2xl-flex flex-1 items-center mb-16">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor" role="presentation"><g fill="none"><path d="M0 0h24v24H0V0z"></path><path opacity=".87" d="M0 0h24v24H0V0z"></path></g><path d="M4 13c.55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1 .45 1 1 1zm0 4c.55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1 .45 1 1 1zm0-8c.55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1 .45 1 1 1zm4 4h12c.55 0 1-.45 1-1s-.45-1-1-1H8c-.55 0-1 .45-1 1s.45 1 1 1zm0 4h12c.55 0 1-.45 1-1s-.45-1-1-1H8c-.55 0-1 .45-1 1s.45 1 1 1zM7 8c0 .55.45 1 1 1h12c.55 0 1-.45 1-1s-.45-1-1-1H8c-.55 0-1 .45-1 1zm-3 5c.55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1 .45 1 1 1zm0 4c.55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1 .45 1 1 1zm0-8c.55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1 .45 1 1 1zm4 4h12c.55 0 1-.45 1-1s-.45-1-1-1H8c-.55 0-1 .45-1 1s.45 1 1 1zm0 4h12c.55 0 1-.45 1-1s-.45-1-1-1H8c-.55 0-1 .45-1 1s.45 1 1 1zM7 8c0 .55.45 1 1 1h12c.55 0 1-.45 1-1s-.45-1-1-1H8c-.55 0-1 .45-1 1z"></path></svg>
+                            <div class="d-2xl-flex detail-video__text">
+                              <div class="detail-video__title fs-14 ml-8">Photos</div>
+                            </div>
+                          </a>
+                          <!-- end text -->
+                        </div>
+                        <!-- end content -->
+                      </div>
+                      <!-- end img -->
+                      <div class="pt-12">
+                        <div class="text-black-87">
+                          <a href="#" class="link-decoration fs-16 lh-24 tracking-03125">IMDb's Top Picks for May</a>
+                        </div>
+                        <div class="text-blue-579 mt-8">
+                          <a href="#" class="link-decoration fs-16 lh-24 tracking-03125">See the list</a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end box -->
+                    <!-- box -->
+                    <div class="more-explore__box px-24">
+                      <!-- img -->
+                      <div class="main-primary-left__item item position-relative w-full">
+                        <a href="#" class="main-primary-left__img detail-video__img image-wrapper">
+                          <img src="./images/2.jpg" alt="" class="">
+                        </a>
+                        <!-- content -->
+                        <div class="main-primary-left__content detail-video__content px-12 position-absolute d-2xl-flex w-full">
+                          <!-- text -->
+                          <a href="#" class="detail-video__link d-2xl-flex flex-1 items-center mb-16">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor" role="presentation"><g fill="none"><path d="M0 0h24v24H0V0z"></path><path opacity=".87" d="M0 0h24v24H0V0z"></path></g><path d="M4 13c.55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1 .45 1 1 1zm0 4c.55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1 .45 1 1 1zm0-8c.55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1 .45 1 1 1zm4 4h12c.55 0 1-.45 1-1s-.45-1-1-1H8c-.55 0-1 .45-1 1s.45 1 1 1zm0 4h12c.55 0 1-.45 1-1s-.45-1-1-1H8c-.55 0-1 .45-1 1s.45 1 1 1zM7 8c0 .55.45 1 1 1h12c.55 0 1-.45 1-1s-.45-1-1-1H8c-.55 0-1 .45-1 1zm-3 5c.55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1 .45 1 1 1zm0 4c.55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1 .45 1 1 1zm0-8c.55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1 .45 1 1 1zm4 4h12c.55 0 1-.45 1-1s-.45-1-1-1H8c-.55 0-1 .45-1 1s.45 1 1 1zm0 4h12c.55 0 1-.45 1-1s-.45-1-1-1H8c-.55 0-1 .45-1 1s.45 1 1 1zM7 8c0 .55.45 1 1 1h12c.55 0 1-.45 1-1s-.45-1-1-1H8c-.55 0-1 .45-1 1z"></path></svg>
+                            <div class="d-2xl-flex detail-video__text">
+                              <div class="detail-video__title fs-14 ml-8">Photos</div>
+                            </div>
+                          </a>
+                          <!-- end text -->
+                        </div>
+                        <!-- end content -->
+                      </div>
+                      <!-- end img -->
+                      <div class="pt-12">
+                        <div class="text-black-87">
+                          <a href="#" class="link-decoration fs-16 lh-24 tracking-03125">IMDb's Top Picks for May</a>
+                        </div>
+                        <div class="text-blue-579 mt-8">
+                          <a href="#" class="link-decoration fs-16 lh-24 tracking-03125">See the list</a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end box -->
+                  </div>
+                  <!-- end more to explore -->
+                </div>
+                <!-- end right -->
+              </div>
+          </div>
+        </section>
+        <!-- end secondary -->
 
         <!-- recenly -->
         <section class="recenly-wrapper wrapper">

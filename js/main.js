@@ -48,6 +48,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // search mb
     var searchMb = getElement(".js_searchMb");
 
+    // popup
+    var popups = getAllElement(".js__popupField");
+
     const app = {
         // su ly cac su kien
         handleEvent: function () {
@@ -121,6 +124,29 @@ document.addEventListener("DOMContentLoaded", function () {
                     formSearchMb.classList.remove("active");
                 };
             }
+
+            // popup
+            if (popups) {
+                popups.forEach((popup) => {
+                    var popupShow = popup.querySelector(".js__showPopup");
+                    var popupWrapper = popup.querySelector(".js__popupWrapper");
+                    var popupClose = popup.querySelector(".js__closePopup");
+
+                    popupShow.onclick = function () {
+                        popupWrapper.classList.add("active");
+                        document.querySelector("body").classList.add("hidden");
+                    };
+
+                    popupClose.onclick = function () {
+                        if (popupWrapper.matches(".active")) {
+                            popupWrapper.classList.remove("active");
+                        }
+                        document
+                            .querySelector("body")
+                            .classList.remove("hidden");
+                    };
+                });
+            }
         },
 
         // slider primary
@@ -173,6 +199,40 @@ document.addEventListener("DOMContentLoaded", function () {
                     },
                     1200: {
                         slidesPerView: 6,
+                        spaceBetween: 25,
+                        slidesPerGroup: 6,
+                    },
+                },
+            });
+        },
+        // slider four item
+        sliderFourItems: function () {
+            var swiper = new Swiper(".js_fourItems", {
+                slidesPerView: 2.3,
+                spaceBetween: 16,
+                slidesPerGroup: 2,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 2,
+                        slidesPerGroup: 2,
+                        spaceBetween: 16,
+                    },
+                    768: {
+                        slidesPerView: 2.3,
+                        slidesPerGroup: 4,
+                        spaceBetween: 16,
+                    },
+                    1024: {
+                        slidesPerView: 4,
+                        spaceBetween: 16,
+                        slidesPerGroup: 6,
+                    },
+                    1200: {
+                        slidesPerView: 4,
                         spaceBetween: 25,
                         slidesPerGroup: 6,
                     },
@@ -247,10 +307,12 @@ document.addEventListener("DOMContentLoaded", function () {
             this.windowScroll();
             // slider primary
             this.sliderPrimary();
-            // slider six item
-            this.sliderSixItems();
             // slider three item
             this.sliderThreeItems();
+            // slider four item
+            this.sliderFourItems();
+            // slider six item
+            this.sliderSixItems();
         },
     };
 
