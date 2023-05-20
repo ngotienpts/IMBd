@@ -528,6 +528,13 @@
         width: 100%;
         background-color: rgba($color: #000, $alpha: 0.7);
         border-top: 1px solid rgba($color: #fff, $alpha: 0.4);
+        transition: all 0.2s ease;
+        &.hide {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            user-select: none;
+        }
 
         &-close,
         &-not {
@@ -546,6 +553,13 @@
             top: auto;
             bottom: 100px;
             left: calc(100% - 1280px / 4);
+            transition: all 0.2s ease;
+            &:not(.show) {
+                opacity: 0;
+                visibility: hidden;
+                pointer-events: none;
+                user-select: none;
+            }
         }
         &-left {
             width: 60%;

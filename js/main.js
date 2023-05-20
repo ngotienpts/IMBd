@@ -30,6 +30,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // rating
     var rating = getElement(".js__rating");
 
+    // show hide sapo popup image 
+    var popupImageItems = getAllElement('.js__popupImageItem')
+
     const app = {
         // su ly cac su kien
         handleEvent: function () {
@@ -217,6 +220,22 @@ document.addEventListener("DOMContentLoaded", function () {
                             .classList.remove("hidden");
                     };
                 });
+
+            // show hide sapo popup image 
+            popupImageItems && popupImageItems.forEach(item => {
+                var sapo = item.querySelector('.js__popupImageSapo'),
+                    hideSapo = item.querySelector('.js__closePopupSapo'),
+                    showSapo = item.querySelector('.js__showPopupSapo')
+                
+                hideSapo.onclick = function(){
+                    sapo.classList.add('hide')
+                    showSapo.classList.add('show')
+                }
+                showSapo.onclick = function(){
+                    sapo.classList.remove('hide')
+                    showSapo.classList.remove('show')
+                }
+            })
         },
 
         // slider primary
