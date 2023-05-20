@@ -547,8 +547,8 @@
   <main id="main" class="main">
     <div class="detail-block">
         <!-- primary -->
-        <section class="detail-primary bg-gray-1f">
-        <div class="w-1280 px-24">
+        <section class="detail-primary-wrapper bg-gray-1f">
+        <div class="w-1280 px-24 detail-primary">
             <!-- top -->
             <div class="detail-primary__top d-2xl-flex items-center justify-between h-48">
                 <!-- episode -->
@@ -719,7 +719,7 @@
                             </div>
                             <!-- end container -->
                         </div>
-                        <div class="overlay"></div>
+                        <div class="overlay js__overlay"></div>
                       </div>
                     </li>
                     <li class="item cursor share position-relative hover-show-dropdown">
@@ -759,7 +759,7 @@
             <!-- end top -->
 
             <!-- heading -->
-            <div class="detail-primary__heading pb-12 d-2xl-flex items-center justify-between">
+            <div class="detail-primary__heading pb-12 d-2xl-flex d-md-block items-center justify-between">
                 <!-- left -->
                 <div class="left">
                     <h1 class="title fs-48">Thanh Gươm Diệt Quỷ</h1>
@@ -798,11 +798,64 @@
                     <!-- item -->
                     <div class="action-item p-4">
                         <span class="action-item__title text-center d-2xl-block text-white-70 fw-600 fs-12 tracking-166  mb-4">YOUR RATING</span>
-                        <div class="cursor">
-                            <div class="d-2xl-flex items-center hover-bg-009 px-8 border-4">
+                        <div class="js__popupField">
+                            <div class="d-2xl-flex items-center hover-bg-009 px-8 border-4 js__showPopup">
                                 <img src="./images/svg/start-blue-border.svg" alt="" class="action-item__img mr-4">
                                 <span class="text-blue-579 fw-600 fs-20 tracking-0125">Rate</span>
                             </div>
+                            <!-- popup -->
+                            <div class="popup-wrapper js__popupWrapper">
+                              <div class="popup-container popup-topics bg-gray-1f w-full">
+                                  <div class="popup-close hover-bg-009 border-full js__closePopup cursor">
+                                      <img src="./images/svg/close-w.svg" alt="">
+                                  </div>
+                                  <!-- rating -->
+                                  <div class="popup-rating js__rating p-24">
+
+                                    <div class="start-large text-blue-579">
+                                      <div class="start-large__icon js__increaseSize">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="85" height="81" viewBox="0 0 85 81" fill="currentColor" role="presentation"><path d="M29.4278383,26.4913549 L2.77970363,28.6432143 L2.63541119,28.6580541 C0.066865676,28.979767 -0.941953299,32.2222005 1.05754936,33.9345403 L21.3502824,51.3123553 L15.1650027,77.2797478 L15.1355051,77.4163845 C14.6437005,79.9569202 17.4230421,81.9201545 19.6736611,80.5499671 L42.5,66.6529451 L65.3263389,80.5499671 L65.447392,80.6201968 C67.7156822,81.8722123 70.4448402,79.8400226 69.8349973,77.2797478 L63.6489629,51.3123553 L83.9424506,33.9345403 L84.0504483,33.8378644 C85.9390285,32.0703808 84.8461128,28.855226 82.2202964,28.6432143 L55.571407,26.4913549 L45.2865041,1.85440279 C44.2543406,-0.618134262 40.7456594,-0.618134262 39.7134959,1.85440279 L29.4278383,26.4913549 Z"></path></svg>
+                                      </div>
+                                      <span class="start-large__count fs-20 lh-26 tracking-03125 text-white js__ratingCount">?</span>
+                                    </div>
+                                    <div class="popup-rating__container">
+                                      <!-- text -->
+                                      <span class="action-item__title text-center d-2xl-block uppercase text-yellow-f5c fw-600 fs-12 tracking-166  mb-4">rate this</span>
+                                      <!-- end text -->
+                                      <!-- name -->
+                                      <h3 class="popup-rating__name fs-20 lh-26 tracking-03125 my-8 px-24 fix-text2 text-center">Vệ Binh Dải Ngân Hà</h3>
+                                      <!-- end name -->
+
+                                      <!-- rating group -->
+                                      <div class="rating-group">
+                                        <form class="d-2xl-flex items-center justify-center rating-form">
+                                          <fieldset class="rating-form__start flex-1 py-8 w-full d-2xl-flex items-center justify-center">
+                                            <span class="star-cb-group js__ratingGroup">
+                                              <input type="radio" id="rating-10" name="rating" value="10" /><label for="rating-10">10</label>
+                                              <input type="radio" id="rating-9" name="rating" value="9" /><label for="rating-9">9</label>
+                                              <input type="radio" id="rating-8" name="rating" value="8" /><label for="rating-8">8</label>
+                                              <input type="radio" id="rating-7" name="rating" value="7" /><label for="rating-7">7</label>
+                                              <input type="radio" id="rating-6" name="rating" value="6" /><label for="rating-6">6</label>
+                                              <input type="radio" id="rating-5" name="rating" value="5" /><label for="rating-5">5</label>
+                                              <input type="radio" id="rating-4" name="rating" value="4" /><label for="rating-4">4</label>
+                                              <input type="radio" id="rating-3" name="rating" value="3" /><label for="rating-3">3</label>
+                                              <input type="radio" id="rating-2" name="rating" value="2" /><label for="rating-2">2</label>
+                                              <input type="radio" id="rating-1" name="rating" value="1" /><label for="rating-1">1</label>
+                                            </span>
+                                          </fieldset>
+                                          <div class="flex-1 w-full">
+                                            <div class="rating__btn js__ratingSubmit my-16 w-full d-2xl-inline-flex items-center justify-center fs-14 h-36 border-4 fw-600 bg-gray-12">Rate</div>
+                                          </div>
+                                        </form>
+                                      </div>
+                                      <!-- end rating group -->
+                                    </div>
+                                  </div>
+                                  <!-- rating -->
+                              </div>
+                              <div class="overlay js__overlay"></div>
+                            </div>
+                            <!-- end popup -->
                         </div>
                     </div>  
                     <!-- end item -->
@@ -864,7 +917,7 @@
             <!-- end video -->
 
             <!-- bot -->
-            <div class="detail-primary__bot d-2xl-flex items-center justify-between">
+            <div class="detail-primary__bot d-2xl-flex d-md-block items-center justify-between">
               <!-- left -->
               <div class="detail-primary__bot-left mb-12">
                 <!-- chip list -->
@@ -912,17 +965,54 @@
                 <!-- btn add to watch list -->
                 <div class="d-2xl-flex items-center">
                   <!-- add to watch list large-->
-                  <div class="add-to-watch-large d-2xl-flex items-centert hover-bg-009 flex-1 bg-white-006 h-48 cursor">
+                  <a href="#" class="add-to-watch-large d-2xl-flex items-centert hover-bg-009 flex-1 bg-white-006 h-48 cursor">
                     <img src="./images/svg/plus.svg" alt="" class="add-to-watch-large__img mr-4">
                     <div class="add-to-watch-large__content">
                       <div class="add-to-watch-large__text fs-14 fw-600 mb-4">Add to Watchlist</div>
                       <div class="add-to-watch-large__count fs-12 text-white-70 tracking-03125">Added by 560K users</div>
                     </div>
-                  </div>
+                  </a>
                   <!-- end add to watch list large-->
                   <!-- add to watch list small-->
-                  <div class="add-to-watch-small d-2xl-flex items-center justify-center flex-0 hover-bg-009 h-48 w-48 cursor bg-white-006">
-                    <img src="./images/svg/down-arrow.svg" alt="" class="add-to-watch-small__img">
+                  <div class="add-to-watch-small d-2xl-flex items-center justify-center flex-0 hover-bg-009 h-48 w-48 cursor bg-white-006 js__popupField">
+                    <div class="w-full h-full d-2xl-flex items-center justify-center js__showPopup">
+                      <img src="./images/svg/down-arrow.svg" alt="" class="add-to-watch-small__img">
+                    </div>
+                    <!-- popup -->
+                    <div class="popup-wrapper js__popupWrapper">
+                      <div class="popup-container popup-topics bg-gray-1f w-full">
+                          <div class="popup-close hover-bg-009 border-full js__closePopup">
+                              <img src="./images/svg/close-w.svg" alt="">
+                          </div>
+                          <!-- heading -->
+                          <div class="popup-topics__heading d-2xl-flex bg-gray-1a p-16">
+                              <!-- img -->
+                              <div class="img flex-0">
+                                  <a href="#" class="recenly__img image-wrapper-vertical">
+                                      <img src="./images/1.jpg" alt="">
+                                  </a>
+                              </div>
+                              <!-- end img -->
+                              <!-- content -->
+                              <div class="content ml-12 flex-1">
+                                  <p class="title fs-14 text-white-70 fw-400 mb-4">Thanh Gươm Diệt Quỷ</p>
+                                  <h3 class="text fs-24 fw-600">Add to list</h3>
+                              </div>
+                              <!-- end content -->
+                          </div>
+                          <!-- end heading -->
+
+                          <!-- container -->
+                          <div class="popup-topics__container p-16">
+                              <div class="text-blue-579 text-center my-24 py-24 ">
+                                <a href="#" class="link-decoration fs-16 text-center">Sign in to create or view a list.</a>
+                              </div>
+                          </div>
+                          <!-- end container -->
+                      </div>
+                      <div class="overlay js__overlay"></div>
+                    </div>
+                    <!-- end popup -->
                   </div>
                   <!-- end add to watch list small-->
                 </div>
@@ -956,7 +1046,7 @@
         <!-- secondary -->
         <section class="detail-secondary-wrapper bg-white">
           <div class="w-1280">
-              <div class="detail-secondary d-2xl-grid">
+              <div class="detail-secondary d-2xl-grid d-md-block">
                 <!-- left -->
                 <div class="detail-secondary-left">
                   
@@ -1051,6 +1141,138 @@
                       </div>
                     </div>
                     <!-- end container -->
+                    <!-- popup image -->
+                    <div class="popup-image-wrapper js__popupImageWrapper">
+                      <!-- heading -->
+                      <div class="w-1280">
+                        <div class="popup-image__heading d-2xl-flex items-center justify-between">
+                          <!-- close -->
+                          <div class="popup-image__close d-2xl-flex items-center px-12 py-8 border-4 hover-bg-008 js__closePopupImage">
+                            <img src="./images/svg/close-w.svg" alt="" class="mr-4">
+                            <span class="fs-14">Close</span>
+                          </div>
+                          <!-- end close -->
+
+                          <!-- right -->
+                          <div class="popup-image__right d-2xl-flex items-center">
+                            <!-- text count -->
+                            <div class="popup-image__count text-yellow-f5c fs-16 mr-4 js__popupCountImage">5 of 200</div>
+                            <!-- end text count -->
+                            <!-- more -->
+                            <div class="popup-image__more h-48 w-48 p-12 hover-bg-008 border-full">
+                              <a href="#" class="w-full h-full">
+                                <img src="./images/svg/more.svg" alt="">
+                              </a>
+                            </div>
+                            <!-- end more -->
+                            <!-- dropdown -->
+                            <div class="popup-image__dropdown cursor share position-relative hover-show-dropdown">
+                              <div class=" h-48 w-48 border-full hover-bg-009 d-2xl-flex items-center justify-center">
+                                <img src="./images/svg/share.svg" alt="">
+                              </div>
+        
+                              <!-- dropdown -->
+                              <div class="detail-dropdown bg-gray-1f py-8 border-4">
+                                <a href="#" class="detail-dropdown-item d-2xl-flex items-center h-48 px-16 hover-bg-009">
+                                  <img src="./images/svg/fb-silver.svg" alt="" class="mr-12">
+                                  <span class="fs-16">Facebook</span>
+                                </a>
+                                <a href="#" class="detail-dropdown-item d-2xl-flex items-center h-48 px-16 hover-bg-009">
+                                  <img src="./images/svg/twitter-silver.svg" alt="" class="mr-12">
+                                  <span class="fs-16">Twitter</span>
+                                </a>
+                                <a href="#" class="detail-dropdown-item d-2xl-flex items-center h-48 px-16 hover-bg-009">
+                                  <img src="./images/svg/email-silver.svg" alt="" class="mr-12">
+                                  <span class="fs-16">Email Link</span>
+                                </a>
+                                <div class="detail-dropdown-item detail-dropdown-copy-link d-2xl-flex items-center h-48 px-16 hover-bg-009 js__copyLink ">
+                                  <img src="./images/svg/copy-link-silver.svg" alt="" class="mr-12">
+                                  <span class="fs-16">Coppy Link</span>
+                                </div>
+                                <a href="#" class="detail-dropdown-item detail-dropdown-share d-2xl-flex items-center h-48 px-16 hover-bg-009">
+                                  <span class="fs-16">Share IMDb rating</span>
+                                  <img src="./images/svg/arrow-next-silver.svg" alt="" class="ml-12">
+                                </a>
+                              </div>
+                              <!-- end dropdown -->
+        
+                            </div>
+                            <!-- end dropdown -->
+
+                          </div>
+                          <!-- end right -->
+                        </div>
+                      </div>
+                      <!-- end heading -->
+
+                      <!-- container -->
+                      <div class="popup-image__container">
+                        <div class="popup-image__thumb">
+                          <img src="./images/2.jpg" alt="">
+                        </div>
+                        <!-- sapo -->
+                        <div class="w-1280 popup-image__sapo">
+                          <!-- icon -->
+                          <div class="popup-image__sapo-close d-2xl-flex items-center justify-center js__closePopupSapo cursor">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"  viewBox="0 0 24 24" fill="currentColor" role="presentation"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59 7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12 5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"></path></svg>
+                          </div>
+                          <!-- end icon -->
+                          
+                          <!-- content -->
+                          <h4 class="text-yellow-f5c px-24 py-8 fs-14 h-36 d-2xl-flex items-center">Vệ Binh Dải Ngân Hà 3 (2023)</h4>
+                          <div class="popup-image__sapo-content px-24 pb-16 d-2xl-flex">
+                            <!-- left -->
+                            <div class="popup-image__sapo-left pr-16">
+                              <div class="text-white fs-16">
+                                <span class="text-blue-579">
+                                  <a href="#" class="link-decoration">Dave Bautista</a>
+                                </span>
+                                and
+                                <span class="text-blue-579">
+                                  <a href="#" class="link-decoration">Pom Klementieff</a>
+                                </span>
+                                in
+                                <span class="text-blue-579">
+                                  <a href="#" class="link-decoration">Vệ Binh Dải Ngân Hà 3 (2023)</a>
+                                </span>
+                              </div>
+                            </div>
+                            <!-- end left -->
+                            <!-- right -->
+                            <div class="popup-image__sapo-right pl-16 ">
+                              <div class="d-2xl-flex items-center fs-14 mb-8">
+                                <span class="fw-600 mr-8">People</span>
+                                <span class="text-blue-579">
+                                  <a href="#" class="link-decoration">Dave Bautista</a>
+                                </span>
+                                ,
+                                <span class="text-blue-579">
+                                  <a href="#" class="link-decoration">Pom Klementieff</a>
+                                </span>
+                              </div>
+                              <div class="d-2xl-flex items-center fs-14 mb-8">
+                                <span class="fw-600 mr-8">Title</span>
+                                <span class="text-blue-579">
+                                  <a href="#" class="link-decoration">Vệ Binh Dải Ngân Hà 3</a>
+                                </span>
+                              </div>
+                              <div class="fs-12 text-white-70 mt-12">Photo by Jessica Miglio/Jessica Miglio - © MARVEL 2023.</div>
+                            </div>
+                            <!-- end right -->
+                          </div>
+                          <!-- end content -->
+                        </div>
+                        <!-- end sapo -->
+                        <!-- show sapo -->
+                        <div class="popup-image__sapo-not d-2xl-flex items-center justify-center js__showPopupSapo cursor">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path></svg>
+                        </div>
+                        <!-- end show sapo -->
+                        
+                      </div>
+                      <!-- end container -->
+                    </div>
+                    <!-- end popup image -->
                   </div>
                   <!-- end photos -->
 

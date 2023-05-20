@@ -88,6 +88,21 @@
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1rem;
   }
+
+  .episode {
+    display: none;
+  }
+
+  .detail-primary {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .detail-primary__top {
+    justify-content: flex-end;
+  }
+  .detail-primary__top .list .item:not(.topics, .share) {
+    display: none;
+  }
 }
 @media (max-width: 40em) {
   .d-sm-none {

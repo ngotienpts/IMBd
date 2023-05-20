@@ -93,6 +93,20 @@
     }
 
     // --------------------------------------------------------------------detail
+    .episode {
+        display: none;
+    }
+    .detail-primary {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        &__top {
+            justify-content: flex-end;
+
+            .list .item:not(.topics, .share) {
+                display: none;
+            }
+        }
+    }
 }
 
 // max width 640px

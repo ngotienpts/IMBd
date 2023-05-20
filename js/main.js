@@ -10,30 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
         return elements;
     }
 
-    // add show and scroll body hidden
-    function showElementHiddenBody(item, action) {
-        item.onclick = function () {
-            this.classList.toggle(action);
-            document.querySelector("body").classList.toggle("hidden");
-        };
-    }
-
-    // add show item
-    function showItem(item, action) {
-        item.onclick = function () {
-            this.classList.toggle(action);
-        };
-    }
-    // add show items
-    function showItemList(items, action) {
-        items.forEach((item) => {
-            item.onclick = function () {
-                this.classList.toggle(action);
-            };
-        });
-    }
-    // body
-    var doc = getElement("body");
     // back top
     var backTop = getElement("#back-top");
 
@@ -51,19 +27,20 @@ document.addEventListener("DOMContentLoaded", function () {
     // popup
     var popups = getAllElement(".js__popupField");
 
+    // rating
+    var rating = getElement(".js__rating");
+
     const app = {
         // su ly cac su kien
         handleEvent: function () {
             const _this = this;
 
             // when click back top
-            if (backTop) {
-                backTop.onclick = function () {
+            backTop &&
+                (backTop.onclick = function () {
                     document.body.scrollTop = 0;
                     document.documentElement.scrollTop = 0;
-                };
-            }
-
+                });
             // show menu pc
             if (menuPc) {
                 var item = menuPc.parentElement.querySelector(".js_showMenu");
@@ -77,6 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     document.querySelector("body").classList.remove("hidden");
                 };
             }
+
             // show sub menu
             if (subMenu) {
                 var closeSubMenu = getElement(".js_closeSubMenu");
@@ -96,8 +74,9 @@ document.addEventListener("DOMContentLoaded", function () {
                     document.querySelector("body").classList.remove("hidden");
                 };
             }
+
             // dropdown sub menu
-            if (dropdownSubMenu) {
+            dropdownSubMenu &&
                 dropdownSubMenu.forEach((item) => {
                     var parent = item.parentElement;
                     var nextEle = parent.querySelector(".js_listSubMenu");
@@ -111,7 +90,6 @@ document.addEventListener("DOMContentLoaded", function () {
                         }
                     };
                 });
-            }
 
             // search mb
             if (searchMb) {
@@ -126,11 +104,85 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             // popup
-            if (popups) {
+            popups &&
                 popups.forEach((popup) => {
                     var popupShow = popup.querySelector(".js__showPopup");
                     var popupWrapper = popup.querySelector(".js__popupWrapper");
                     var popupClose = popup.querySelector(".js__closePopup");
+                    var popupOverlay = popup.querySelector(".js__overlay");
+
+                    // rating
+                    if (rating) {
+                        var ratingCount =
+                            rating.querySelector(".js__ratingCount");
+                        var ratingGroup =
+                            rating.querySelector(".js__ratingGroup");
+                        var ratingSubmit =
+                            rating.querySelector(".js__ratingSubmit");
+                        var increaseSize =
+                            rating.querySelector(".js__increaseSize");
+                        var inputList = ratingGroup.querySelectorAll(
+                            "input[type='radio'][name='rating']"
+                        );
+                    }
+                    if (inputList) {
+                        inputList.forEach((input) => {
+                            input.onchange = function (e) {
+                                if (e.target.checked) {
+                                    switch (
+                                        ((ratingCount.innerText =
+                                            e.target.value),
+                                        ratingSubmit.classList.add("isCheck"),
+                                        Number.parseInt(q.target.value))
+                                    ) {
+                                        case 1:
+                                            increaseSize.style.transform =
+                                                "translateX(-50%) scale(1.05)";
+                                            break;
+                                        case 2:
+                                            increaseSize.style.transform =
+                                                "translateX(-50%) scale(1.1)";
+                                            break;
+                                        case 3:
+                                            increaseSize.style.transform =
+                                                "translateX(-50%) scale(1.15)";
+                                            break;
+                                        case 4:
+                                            increaseSize.style.transform =
+                                                " translateX(-50%) scale(1.2)";
+                                            break;
+                                        case 5:
+                                            increaseSize.style.transform =
+                                                "translateX(-50%) scale(1.25)";
+                                            break;
+                                        case 6:
+                                            increaseSize.style.transform =
+                                                "translateX(-50%) scale(1.3)";
+                                            break;
+                                        case 7:
+                                            increaseSize.style.transform =
+                                                "translateX(-50%) scale(1.35)";
+                                            break;
+                                        case 8:
+                                            increaseSize.style.transform =
+                                                "translateX(-50%) scale(1.4)";
+                                            break;
+                                        case 9:
+                                            increaseSize.style.transform =
+                                                "translateX(-50%) scale(1.45)";
+                                            break;
+                                        case 10:
+                                            increaseSize.style.transform =
+                                                "translateX(-50%) scale(1.5)";
+                                            break;
+                                        default:
+                                            increaseSize.style.transform =
+                                                "translateX(-50%) scale(1)";
+                                    }
+                                }
+                            };
+                        });
+                    }
 
                     popupShow.onclick = function () {
                         popupWrapper.classList.add("active");
@@ -141,30 +193,46 @@ document.addEventListener("DOMContentLoaded", function () {
                         if (popupWrapper.matches(".active")) {
                             popupWrapper.classList.remove("active");
                         }
+                        if (ratingSubmit.matches(".isCheck")) {
+                            ratingSubmit.classList.remove("isCheck");
+                        }
+                        if (rating) {
+                            inputList.forEach((input) => {
+                                input.checked = false;
+                            });
+                            increaseSize.style.transform =
+                                "translateX(-50%) scale(1)";
+                            ratingCount.innerText = "?";
+                        }
+                        document
+                            .querySelector("body")
+                            .classList.remove("hidden");
+                    };
+
+                    popupOverlay.onclick = function () {
+                        popupWrapper.matches(".active") &&
+                            popupWrapper.classList.remove("active");
                         document
                             .querySelector("body")
                             .classList.remove("hidden");
                     };
                 });
-            }
         },
 
         // slider primary
         sliderPrimary: function () {
-            var swiper = new Swiper(".primaryRight", {
+            var e = new Swiper(".primaryRight", {
                 slidesPerView: 3,
                 slidesPerGroup: 1,
                 direction: "vertical",
-                loop: true,
-                freeMode: true,
+                loop: !0,
+                freeMode: !0,
             });
-            var swiper2 = new Swiper(".primaryLeft", {
+            new Swiper(".primaryLeft", {
                 slidesPerView: 1,
                 spaceBetween: 0,
-                loop: true,
-                thumbs: {
-                    swiper: swiper,
-                },
+                loop: !0,
+                thumbs: { swiper: e },
                 navigation: {
                     nextEl: ".swiper-button-next",
                     prevEl: ".swiper-button-prev",
@@ -173,7 +241,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         // slider six item
         sliderSixItems: function () {
-            var swiper = new Swiper(".js_sixItems", {
+            new Swiper(".js_sixItems", {
                 slidesPerView: 2.3,
                 spaceBetween: 16,
                 slidesPerGroup: 2,
@@ -207,7 +275,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         // slider four item
         sliderFourItems: function () {
-            var swiper = new Swiper(".js_fourItems", {
+            new Swiper(".js_fourItems", {
                 slidesPerView: 2.3,
                 spaceBetween: 16,
                 slidesPerGroup: 2,
@@ -241,7 +309,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         // slider three item
         sliderThreeItems: function () {
-            var swiper = new Swiper(".js_threeItems", {
+            new Swiper(".js_threeItems", {
                 slidesPerView: 1.2,
                 spaceBetween: 16,
                 slidesPerGroup: 1,
@@ -280,15 +348,17 @@ document.addEventListener("DOMContentLoaded", function () {
                     document.body.scrollTop > 600 ||
                     document.documentElement.scrollTop > 600
                 ) {
-                    // backTop.style.opacity = 1;
-                    // backTop.style.visibility = "visible";
                     backTop.style.top = "2.25rem";
                 } else {
-                    // backTop.style.opacity = 0;
-                    // backTop.style.visibility = "hidden";
                     backTop.style.top = "-2.25rem";
                 }
             }
+            backTop &&
+                (backTop.style.top =
+                    600 < document.body.scrollTop ||
+                    600 < document.documentElement.scrollTop
+                        ? "2.25rem"
+                        : "-2.25rem");
         },
 
         // window scroll
