@@ -360,6 +360,21 @@ document.addEventListener("DOMContentLoaded", function () {
                 },
             });
         },
+        // slider one item
+        sliderOneItems: function () {
+            new Swiper(".js__oneItems", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                slidesPerGroup: 1,
+                // effect: "fade",
+                zoom: true,
+                loop: true,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        },
         // scroll top
         scrollFunc: function () {
             if (backTop) {
@@ -396,6 +411,8 @@ document.addEventListener("DOMContentLoaded", function () {
             this.windowScroll();
             // slider primary
             this.sliderPrimary();
+            // slider one item
+            this.sliderOneItems();
             // slider three item
             this.sliderThreeItems();
             // slider four item
