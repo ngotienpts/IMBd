@@ -455,7 +455,7 @@ img {
 }
 
 .text-white-70 {
-  color: hsla(0deg, 0%, 100%, 0.7);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .text-yellow-f5c {
@@ -1376,7 +1376,7 @@ img {
   top: 0;
   width: 17.5rem;
   height: 100%;
-  background-color: rgb(31, 31, 31);
+  background-color: #1f1f1f;
   z-index: 100;
   box-shadow: 0px 11px 15px -7px rgba(var(--ipt-baseAlt-rgb), 0.2), 0px 24px 38px 3px rgba(var(--ipt-baseAlt-rgb), 0.14), 0px 9px 46px 8px rgba(var(--ipt-baseAlt-rgb), 0.12);
   transform: translateX(-100%);
@@ -1620,7 +1620,7 @@ img {
   width: 50px;
   height: 66px;
   top: 35%;
-  background-color: hsla(0deg, 0%, 7%, 0.45);
+  background-color: rgba(18, 18, 18, 0.45);
   border-radius: 0.25rem;
   border: 1px solid #fff;
   padding: 1.25rem 0.75rem;
@@ -2192,10 +2192,22 @@ img {
   z-index: 1000;
   inset: 0;
   background-color: #000;
+  transition: all 0.2s ease;
+}
+.popup-image-wrapper:not(.active) {
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0);
+}
+.popup-image__item {
+  background-color: #000;
+}
+.popup-image__thumb {
+  height: calc(100vh - 65px);
 }
 .popup-image__thumb img {
-  height: 100vh;
   margin: auto;
+  height: auto;
 }
 .popup-image__heading {
   height: 4rem;
@@ -2246,6 +2258,27 @@ img {
 }
 .popup-image__sapo-right {
   width: 40%;
+}
+.popup-image__count-text {
+  bottom: -11px;
+}
+
+.popup-topics__container-mb {
+  max-height: calc(100vh - 300px);
+  overflow: auto;
+}
+
+.popular-mb-item__heading {
+  height: 3rem;
+}
+.popular-mb-item__list:not(.active) {
+  display: none;
+}
+.popular-mb-item__link {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem 0 3.25rem;
 }
 
 #back-top {
@@ -2322,15 +2355,15 @@ img {
 .footer-item .st1 {
   fill-rule: evenodd;
   clip-rule: evenodd;
-  fill: rgb(0, 102, 255);
+  fill: #0066ff;
 }
 .footer-item .eHMgCW .st0 {
   fill-rule: evenodd;
   clip-rule: evenodd;
-  fill: rgb(255, 255, 255);
+  fill: white;
 }
 .footer-item .eHMgCW .st2 {
-  fill: rgb(255, 255, 255);
+  fill: white;
 }
 .footer-list {
   flex-wrap: wrap;

@@ -597,8 +597,8 @@
                             </div>
                             <!-- end heading -->
 
-                            <!-- container -->
-                            <div class="popup-topics__container p-16">
+                            <!-- container pc-->
+                            <div class="popup-topics__container p-16 d-sm-none">
                                 <!-- popular -->
                                 <div class="popular">
                                     <span class="action-item__title d-2xl-block text-yellow-f5c fw-600 fs-12 tracking-166  mb-16">POPULAR</span>
@@ -717,7 +717,25 @@
                                 </div>
                                 <!-- end presentation -->
                             </div>
-                            <!-- end container -->
+                            <!-- end container pc-->
+                            <!-- container mb -->
+                            <div class="popup-topics__container-mb p-16 d-2xl-none d-sm-block">
+                              <!-- item -->
+                              <div class="popular-mb-item fs-16 fw-400 js__popularItemmb">
+                                <div class="popular-mb-item__heading d-2xl-flex items-center justify-between js__showListPopularMb">
+                                  <h4 class="popular-mb-item__title">popular</h4>
+                                  <img src="./images/svg/down-arrow.svg" alt="" class="popular-mb-item__icon">
+                                </div>
+                                <ul class="popular-mb-item__list js__listPopularMb">
+                                  <li><a href="#" class="popular-mb-item__link">Videos</a></li>
+                                  <li><a href="#" class="popular-mb-item__link">Videos</a></li>
+                                  <li><a href="#" class="popular-mb-item__link">Videos</a></li>
+                                  <li><a href="#" class="popular-mb-item__link">Videos</a></li>
+                                </ul>
+                              </div>
+                              <!-- end item -->
+                            </div>
+                            <!-- end container mb -->
                         </div>
                         <div class="overlay js__overlay"></div>
                       </div>
@@ -789,7 +807,7 @@
                                         <span class="text-white fw-600 fs-20 tracking-0125">8.7</span>
                                         <span class="text-white-70">/10</span>
                                     </div>
-                                    <span class="text-white-70 fs-12">118K</span>
+                                    <span class="text-white-70 fs-12 d-sm-none">118K</span>
                                 </div>
                             </a>
                         </div>
@@ -1051,7 +1069,7 @@
                 <div class="detail-secondary-left">
                   
                   <!-- photos -->
-                  <div class="photos-box py-24 mb-8">
+                  <div class="photos-box py-24 mb-8 js__photoBox">
                     <!-- heading -->
                     <div class="heading d-2xl-flex items-center justify-between mb-24 px-24">
                       <a href="#" class="link d-2xl-flex items-center">
@@ -1070,71 +1088,70 @@
                         <div class="swiper-wrapper">
                           <!-- item -->
                           <div class="swiper-slide">
-                            <div class="main-secondary__item">
+                            <div class="main-secondary__item js__showPopupWrapper">
                               <!-- img -->
-                              <a href="#" class="main-secondary__img image-wrapper-full">
+                              <div class="main-secondary__img image-wrapper-full">
                                 <img src="./images/2.jpg" alt="">
-                              </a>
+                              </div>
                               <!-- end img -->
                             </div>
                           </div>
                           <!-- end item -->
                           <!-- item -->
                           <div class="swiper-slide">
-                            <div class="main-secondary__item">
+                            <div class="main-secondary__item js__showPopupWrapper">
                               <!-- img -->
-                              <a href="#" class="main-secondary__img image-wrapper-full">
+                              <div class="main-secondary__img image-wrapper-full">
                                 <img src="./images/2.jpg" alt="">
-                              </a>
+                              </div>
                               <!-- end img -->
                             </div>
                           </div>
                           <!-- end item -->
                           <!-- item -->
                           <div class="swiper-slide">
-                            <div class="main-secondary__item">
+                            <div class="main-secondary__item js__showPopupWrapper">
                               <!-- img -->
-                              <a href="#" class="main-secondary__img image-wrapper-full">
+                              <div class="main-secondary__img image-wrapper-full">
                                 <img src="./images/2.jpg" alt="">
-                              </a>
+                              </div>
                               <!-- end img -->
                             </div>
                           </div>
                           <!-- end item -->
                           <!-- item -->
                           <div class="swiper-slide">
-                            <div class="main-secondary__item">
+                            <div class="main-secondary__item js__showPopupWrapper">
                               <!-- img -->
-                              <a href="#" class="main-secondary__img image-wrapper-full">
+                              <div class="main-secondary__img image-wrapper-full">
                                 <img src="./images/2.jpg" alt="">
-                              </a>
+                              </div>
                               <!-- end img -->
                             </div>
                           </div>
                           <!-- end item -->
                           <!-- item -->
                           <div class="swiper-slide">
-                            <div class="main-secondary__item">
+                            <div class="main-secondary__item js__showPopupWrapper">
                               <!-- img -->
-                              <a href="#" class="main-secondary__img image-wrapper-full">
+                              <div class="main-secondary__img image-wrapper-full">
                                 <img src="./images/2.jpg" alt="">
-                              </a>
+                              </div>
                               <!-- end img -->
                             </div>
                           </div>
                           <!-- end item -->
                           <!-- item -->
                           <div class="swiper-slide">
-                            <div class="main-secondary__item">
+                            <div class="main-secondary__item js__showPopupWrapper">
                               <!-- img -->
-                              <a href="#" class="main-secondary__img image-wrapper-full">
+                              <div class="main-secondary__img image-wrapper-full">
                                 <img src="./images/2.jpg" alt="">
-                              </a>
+                              </div>
                               <!-- end img -->
                             </div>
                           </div>
                           <!-- end item -->
-                          
                         </div>
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
@@ -1156,7 +1173,9 @@
                           <!-- right -->
                           <div class="popup-image__right d-2xl-flex items-center">
                             <!-- text count -->
-                            <div class="popup-image__count text-yellow-f5c fs-16 mr-4 js__popupCountImage">5 of 200</div>
+                            <div class="popup-image__count text-yellow-f5c fs-16 mr-4 js__popupCountImage position-relative">
+                              <div class="swiper-pagination d-2xl-flex items-center justify-center popup-image__count-text"></div>
+                            </div>
                             <!-- end text count -->
                             <!-- more -->
                             <div class="popup-image__more h-48 w-48 p-12 hover-bg-008 border-full">
@@ -1280,7 +1299,7 @@
                             <div class="swiper-slide">
                               <div class="popup-image__item js__popupImageItem">
                                 <div class="popup-image__thumb">
-                                  <img src="./images/2.jpg" alt="">
+                                  <img src="./images/3.jpg" alt="">
                                 </div>
                                 <!-- sapo -->
                                 <div class="w-1280 popup-image__sapo js__popupImageSapo">
@@ -1347,7 +1366,7 @@
                             <div class="swiper-slide">
                               <div class="popup-image__item js__popupImageItem">
                                 <div class="popup-image__thumb">
-                                  <img src="./images/2.jpg" alt="">
+                                  <img src="./images/4.jpg" alt="">
                                 </div>
                                 <!-- sapo -->
                                 <div class="w-1280 popup-image__sapo js__popupImageSapo">
@@ -1830,12 +1849,12 @@
                     <!-- end heading -->
 
                     <!-- box -->
-                    <div class="more-explore__box px-24">
+                    <div class="more-explore__box px-24 js__photoBox">
                       <!-- img -->
                       <div class="main-primary-left__item item position-relative w-full">
-                        <a href="#" class="main-primary-left__img detail-video__img image-wrapper">
+                        <div class="main-primary-left__img detail-video__img image-wrapper js__showPopupWrapper">
                           <img src="./images/2.jpg" alt="" class="">
-                        </a>
+                        </div>
                         <!-- content -->
                         <div class="main-primary-left__content detail-video__content px-12 position-absolute d-2xl-flex w-full">
                           <!-- text -->
@@ -1858,15 +1877,295 @@
                           <a href="#" class="link-decoration fs-16 lh-24 tracking-03125">See the list</a>
                         </div>
                       </div>
+                      <!-- popup image -->
+                    <div class="popup-image-wrapper js__popupImageWrapper">
+                      <!-- heading -->
+                      <div class="w-1280">
+                        <div class="popup-image__heading d-2xl-flex items-center justify-between">
+                          <!-- close -->
+                          <div class="popup-image__close d-2xl-flex items-center px-12 py-8 cursor border-4 hover-bg-008 js__closePopupImage">
+                            <img src="./images/svg/close-w.svg" alt="" class="mr-4">
+                            <span class="fs-14">Close</span>
+                          </div>
+                          <!-- end close -->
+
+                          <!-- right -->
+                          <div class="popup-image__right d-2xl-flex items-center">
+                            <!-- text count -->
+                            <div class="popup-image__count text-yellow-f5c fs-16 mr-4 js__popupCountImage position-relative">
+                              <div class="swiper-pagination d-2xl-flex items-center justify-center popup-image__count-text"></div>
+                            </div>
+                            <!-- end text count -->
+                            <!-- more -->
+                            <div class="popup-image__more h-48 w-48 p-12 hover-bg-008 border-full">
+                              <a href="#" class="w-full h-full">
+                                <img src="./images/svg/more.svg" alt="">
+                              </a>
+                            </div>
+                            <!-- end more -->
+                            <!-- dropdown -->
+                            <div class="popup-image__dropdown cursor share position-relative hover-show-dropdown">
+                              <div class=" h-48 w-48 border-full hover-bg-009 d-2xl-flex items-center justify-center">
+                                <img src="./images/svg/share.svg" alt="">
+                              </div>
+        
+                              <!-- dropdown -->
+                              <div class="detail-dropdown bg-gray-1f py-8 border-4">
+                                <a href="#" class="detail-dropdown-item d-2xl-flex items-center h-48 px-16 hover-bg-009">
+                                  <img src="./images/svg/fb-silver.svg" alt="" class="mr-12">
+                                  <span class="fs-16">Facebook</span>
+                                </a>
+                                <a href="#" class="detail-dropdown-item d-2xl-flex items-center h-48 px-16 hover-bg-009">
+                                  <img src="./images/svg/twitter-silver.svg" alt="" class="mr-12">
+                                  <span class="fs-16">Twitter</span>
+                                </a>
+                                <a href="#" class="detail-dropdown-item d-2xl-flex items-center h-48 px-16 hover-bg-009">
+                                  <img src="./images/svg/email-silver.svg" alt="" class="mr-12">
+                                  <span class="fs-16">Email Link</span>
+                                </a>
+                                <div class="detail-dropdown-item detail-dropdown-copy-link d-2xl-flex items-center h-48 px-16 hover-bg-009 js__copyLink ">
+                                  <img src="./images/svg/copy-link-silver.svg" alt="" class="mr-12">
+                                  <span class="fs-16">Coppy Link</span>
+                                </div>
+                                <a href="#" class="detail-dropdown-item detail-dropdown-share d-2xl-flex items-center h-48 px-16 hover-bg-009">
+                                  <span class="fs-16">Share IMDb rating</span>
+                                  <img src="./images/svg/arrow-next-silver.svg" alt="" class="ml-12">
+                                </a>
+                              </div>
+                              <!-- end dropdown -->
+        
+                            </div>
+                            <!-- end dropdown -->
+
+                          </div>
+                          <!-- end right -->
+                        </div>
+                      </div>
+                      <!-- end heading -->
+
+                      <!-- container -->
+                      <div class="popup-image__container">
+                        <div class="swiper js__oneItems">
+                          <div class="swiper-wrapper">
+                            <!-- item -->
+                            <div class="swiper-slide">
+                              <div class="popup-image__item js__popupImageItem">
+                                <div class="popup-image__thumb">
+                                  <img src="./images/2.jpg" alt="">
+                                </div>
+                                <!-- sapo -->
+                                <div class="w-1280 popup-image__sapo js__popupImageSapo">
+                                  <!-- icon -->
+                                  <div class="popup-image__sapo-close d-2xl-flex items-center justify-center js__closePopupSapo cursor">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"  viewBox="0 0 24 24" fill="currentColor" role="presentation"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59 7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12 5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"></path></svg>
+                                  </div>
+                                  <!-- end icon -->
+                                  
+                                  <!-- content -->
+                                  <h4 class="text-yellow-f5c px-24 py-8 fs-14 h-36 d-2xl-flex items-center">Vệ Binh Dải Ngân Hà 3 (2023)</h4>
+                                  <div class="popup-image__sapo-content px-24 pb-16 d-2xl-flex">
+                                    <!-- left -->
+                                    <div class="popup-image__sapo-left pr-16">
+                                      <div class="text-white fs-16">
+                                        <span class="text-blue-579">
+                                          <a href="#" class="link-decoration">Dave Bautista</a>
+                                        </span>
+                                        and
+                                        <span class="text-blue-579">
+                                          <a href="#" class="link-decoration">Pom Klementieff</a>
+                                        </span>
+                                        in
+                                        <span class="text-blue-579">
+                                          <a href="#" class="link-decoration">Vệ Binh Dải Ngân Hà 3 (2023)</a>
+                                        </span>
+                                      </div>
+                                    </div>
+                                    <!-- end left -->
+                                    <!-- right -->
+                                    <div class="popup-image__sapo-right pl-16 ">
+                                      <div class="d-2xl-flex items-center fs-14 mb-8">
+                                        <span class="fw-600 mr-8">People</span>
+                                        <span class="text-blue-579">
+                                          <a href="#" class="link-decoration">Dave Bautista</a>
+                                        </span>
+                                        ,
+                                        <span class="text-blue-579">
+                                          <a href="#" class="link-decoration">Pom Klementieff</a>
+                                        </span>
+                                      </div>
+                                      <div class="d-2xl-flex items-center fs-14 mb-8">
+                                        <span class="fw-600 mr-8">Title</span>
+                                        <span class="text-blue-579">
+                                          <a href="#" class="link-decoration">Vệ Binh Dải Ngân Hà 3</a>
+                                        </span>
+                                      </div>
+                                      <div class="fs-12 text-white-70 mt-12">Photo by Jessica Miglio/Jessica Miglio - © MARVEL 2023.</div>
+                                    </div>
+                                    <!-- end right -->
+                                  </div>
+                                  <!-- end content -->
+                                </div>
+                                <!-- end sapo -->
+                                <!-- show sapo -->
+                                <div class="popup-image__sapo-not d-2xl-flex items-center justify-center js__showPopupSapo cursor">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path></svg>
+                                </div>
+                                <!-- end show sapo -->
+                              </div>
+                            </div>
+                            <!-- end item -->
+                            <!-- item -->
+                            <div class="swiper-slide">
+                              <div class="popup-image__item js__popupImageItem">
+                                <div class="popup-image__thumb">
+                                  <img src="./images/3.jpg" alt="">
+                                </div>
+                                <!-- sapo -->
+                                <div class="w-1280 popup-image__sapo js__popupImageSapo">
+                                  <!-- icon -->
+                                  <div class="popup-image__sapo-close d-2xl-flex items-center justify-center js__closePopupSapo cursor">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"  viewBox="0 0 24 24" fill="currentColor" role="presentation"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59 7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12 5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"></path></svg>
+                                  </div>
+                                  <!-- end icon -->
+                                  
+                                  <!-- content -->
+                                  <h4 class="text-yellow-f5c px-24 py-8 fs-14 h-36 d-2xl-flex items-center">Vệ Binh Dải Ngân Hà 3 (2023)</h4>
+                                  <div class="popup-image__sapo-content px-24 pb-16 d-2xl-flex">
+                                    <!-- left -->
+                                    <div class="popup-image__sapo-left pr-16">
+                                      <div class="text-white fs-16">
+                                        <span class="text-blue-579">
+                                          <a href="#" class="link-decoration">Dave Bautista</a>
+                                        </span>
+                                        and
+                                        <span class="text-blue-579">
+                                          <a href="#" class="link-decoration">Pom Klementieff</a>
+                                        </span>
+                                        in
+                                        <span class="text-blue-579">
+                                          <a href="#" class="link-decoration">Vệ Binh Dải Ngân Hà 3 (2023)</a>
+                                        </span>
+                                      </div>
+                                    </div>
+                                    <!-- end left -->
+                                    <!-- right -->
+                                    <div class="popup-image__sapo-right pl-16 ">
+                                      <div class="d-2xl-flex items-center fs-14 mb-8">
+                                        <span class="fw-600 mr-8">People</span>
+                                        <span class="text-blue-579">
+                                          <a href="#" class="link-decoration">Dave Bautista</a>
+                                        </span>
+                                        ,
+                                        <span class="text-blue-579">
+                                          <a href="#" class="link-decoration">Pom Klementieff</a>
+                                        </span>
+                                      </div>
+                                      <div class="d-2xl-flex items-center fs-14 mb-8">
+                                        <span class="fw-600 mr-8">Title</span>
+                                        <span class="text-blue-579">
+                                          <a href="#" class="link-decoration">Vệ Binh Dải Ngân Hà 3</a>
+                                        </span>
+                                      </div>
+                                      <div class="fs-12 text-white-70 mt-12">Photo by Jessica Miglio/Jessica Miglio - © MARVEL 2023.</div>
+                                    </div>
+                                    <!-- end right -->
+                                  </div>
+                                  <!-- end content -->
+                                </div>
+                                <!-- end sapo -->
+                                <!-- show sapo -->
+                                <div class="popup-image__sapo-not d-2xl-flex items-center justify-center js__showPopupSapo cursor">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path></svg>
+                                </div>
+                                <!-- end show sapo -->
+                              </div>
+                            </div>
+                            <!-- end item -->
+                            <!-- item -->
+                            <div class="swiper-slide">
+                              <div class="popup-image__item js__popupImageItem">
+                                <div class="popup-image__thumb">
+                                  <img src="./images/4.jpg" alt="">
+                                </div>
+                                <!-- sapo -->
+                                <div class="w-1280 popup-image__sapo js__popupImageSapo">
+                                  <!-- icon -->
+                                  <div class="popup-image__sapo-close d-2xl-flex items-center justify-center js__closePopupSapo cursor">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"  viewBox="0 0 24 24" fill="currentColor" role="presentation"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59 7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12 5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"></path></svg>
+                                  </div>
+                                  <!-- end icon -->
+                                  
+                                  <!-- content -->
+                                  <h4 class="text-yellow-f5c px-24 py-8 fs-14 h-36 d-2xl-flex items-center">Vệ Binh Dải Ngân Hà 3 (2023)</h4>
+                                  <div class="popup-image__sapo-content px-24 pb-16 d-2xl-flex">
+                                    <!-- left -->
+                                    <div class="popup-image__sapo-left pr-16">
+                                      <div class="text-white fs-16">
+                                        <span class="text-blue-579">
+                                          <a href="#" class="link-decoration">Dave Bautista</a>
+                                        </span>
+                                        and
+                                        <span class="text-blue-579">
+                                          <a href="#" class="link-decoration">Pom Klementieff</a>
+                                        </span>
+                                        in
+                                        <span class="text-blue-579">
+                                          <a href="#" class="link-decoration">Vệ Binh Dải Ngân Hà 3 (2023)</a>
+                                        </span>
+                                      </div>
+                                    </div>
+                                    <!-- end left -->
+                                    <!-- right -->
+                                    <div class="popup-image__sapo-right pl-16 ">
+                                      <div class="d-2xl-flex items-center fs-14 mb-8">
+                                        <span class="fw-600 mr-8">People</span>
+                                        <span class="text-blue-579">
+                                          <a href="#" class="link-decoration">Dave Bautista</a>
+                                        </span>
+                                        ,
+                                        <span class="text-blue-579">
+                                          <a href="#" class="link-decoration">Pom Klementieff</a>
+                                        </span>
+                                      </div>
+                                      <div class="d-2xl-flex items-center fs-14 mb-8">
+                                        <span class="fw-600 mr-8">Title</span>
+                                        <span class="text-blue-579">
+                                          <a href="#" class="link-decoration">Vệ Binh Dải Ngân Hà 3</a>
+                                        </span>
+                                      </div>
+                                      <div class="fs-12 text-white-70 mt-12">Photo by Jessica Miglio/Jessica Miglio - © MARVEL 2023.</div>
+                                    </div>
+                                    <!-- end right -->
+                                  </div>
+                                  <!-- end content -->
+                                </div>
+                                <!-- end sapo -->
+                                <!-- show sapo -->
+                                <div class="popup-image__sapo-not d-2xl-flex items-center justify-center js__showPopupSapo cursor">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path></svg>
+                                </div>
+                                <!-- end show sapo -->
+                              </div>
+                            </div>
+                            <!-- end item -->
+                          </div>
+                          <div class="swiper-button-next"></div>
+                          <div class="swiper-button-prev"></div>
+                        </div>
+                        
+                      </div>
+                      <!-- end container -->
+                    </div>
+                    <!-- end popup image -->
                     </div>
                     <!-- end box -->
                     <!-- box -->
-                    <div class="more-explore__box px-24">
+                    <div class="more-explore__box px-24 js__photoBox">
                       <!-- img -->
                       <div class="main-primary-left__item item position-relative w-full">
-                        <a href="#" class="main-primary-left__img detail-video__img image-wrapper">
+                        <div class="main-primary-left__img detail-video__img image-wrapper js__showPopupWrapper">
                           <img src="./images/2.jpg" alt="" class="">
-                        </a>
+                        </div>
                         <!-- content -->
                         <div class="main-primary-left__content detail-video__content px-12 position-absolute d-2xl-flex w-full">
                           <!-- text -->
@@ -1889,6 +2188,286 @@
                           <a href="#" class="link-decoration fs-16 lh-24 tracking-03125">See the list</a>
                         </div>
                       </div>
+                      <!-- popup image -->
+                    <div class="popup-image-wrapper js__popupImageWrapper">
+                      <!-- heading -->
+                      <div class="w-1280">
+                        <div class="popup-image__heading d-2xl-flex items-center justify-between">
+                          <!-- close -->
+                          <div class="popup-image__close d-2xl-flex items-center px-12 py-8 cursor border-4 hover-bg-008 js__closePopupImage">
+                            <img src="./images/svg/close-w.svg" alt="" class="mr-4">
+                            <span class="fs-14">Close</span>
+                          </div>
+                          <!-- end close -->
+
+                          <!-- right -->
+                          <div class="popup-image__right d-2xl-flex items-center">
+                            <!-- text count -->
+                            <div class="popup-image__count text-yellow-f5c fs-16 mr-4 js__popupCountImage position-relative">
+                              <div class="swiper-pagination d-2xl-flex items-center justify-center popup-image__count-text"></div>
+                            </div>
+                            <!-- end text count -->
+                            <!-- more -->
+                            <div class="popup-image__more h-48 w-48 p-12 hover-bg-008 border-full">
+                              <a href="#" class="w-full h-full">
+                                <img src="./images/svg/more.svg" alt="">
+                              </a>
+                            </div>
+                            <!-- end more -->
+                            <!-- dropdown -->
+                            <div class="popup-image__dropdown cursor share position-relative hover-show-dropdown">
+                              <div class=" h-48 w-48 border-full hover-bg-009 d-2xl-flex items-center justify-center">
+                                <img src="./images/svg/share.svg" alt="">
+                              </div>
+        
+                              <!-- dropdown -->
+                              <div class="detail-dropdown bg-gray-1f py-8 border-4">
+                                <a href="#" class="detail-dropdown-item d-2xl-flex items-center h-48 px-16 hover-bg-009">
+                                  <img src="./images/svg/fb-silver.svg" alt="" class="mr-12">
+                                  <span class="fs-16">Facebook</span>
+                                </a>
+                                <a href="#" class="detail-dropdown-item d-2xl-flex items-center h-48 px-16 hover-bg-009">
+                                  <img src="./images/svg/twitter-silver.svg" alt="" class="mr-12">
+                                  <span class="fs-16">Twitter</span>
+                                </a>
+                                <a href="#" class="detail-dropdown-item d-2xl-flex items-center h-48 px-16 hover-bg-009">
+                                  <img src="./images/svg/email-silver.svg" alt="" class="mr-12">
+                                  <span class="fs-16">Email Link</span>
+                                </a>
+                                <div class="detail-dropdown-item detail-dropdown-copy-link d-2xl-flex items-center h-48 px-16 hover-bg-009 js__copyLink ">
+                                  <img src="./images/svg/copy-link-silver.svg" alt="" class="mr-12">
+                                  <span class="fs-16">Coppy Link</span>
+                                </div>
+                                <a href="#" class="detail-dropdown-item detail-dropdown-share d-2xl-flex items-center h-48 px-16 hover-bg-009">
+                                  <span class="fs-16">Share IMDb rating</span>
+                                  <img src="./images/svg/arrow-next-silver.svg" alt="" class="ml-12">
+                                </a>
+                              </div>
+                              <!-- end dropdown -->
+        
+                            </div>
+                            <!-- end dropdown -->
+
+                          </div>
+                          <!-- end right -->
+                        </div>
+                      </div>
+                      <!-- end heading -->
+
+                      <!-- container -->
+                      <div class="popup-image__container">
+                        <div class="swiper js__oneItems">
+                          <div class="swiper-wrapper">
+                            <!-- item -->
+                            <div class="swiper-slide">
+                              <div class="popup-image__item js__popupImageItem">
+                                <div class="popup-image__thumb">
+                                  <img src="./images/2.jpg" alt="">
+                                </div>
+                                <!-- sapo -->
+                                <div class="w-1280 popup-image__sapo js__popupImageSapo">
+                                  <!-- icon -->
+                                  <div class="popup-image__sapo-close d-2xl-flex items-center justify-center js__closePopupSapo cursor">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"  viewBox="0 0 24 24" fill="currentColor" role="presentation"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59 7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12 5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"></path></svg>
+                                  </div>
+                                  <!-- end icon -->
+                                  
+                                  <!-- content -->
+                                  <h4 class="text-yellow-f5c px-24 py-8 fs-14 h-36 d-2xl-flex items-center">Vệ Binh Dải Ngân Hà 3 (2023)</h4>
+                                  <div class="popup-image__sapo-content px-24 pb-16 d-2xl-flex">
+                                    <!-- left -->
+                                    <div class="popup-image__sapo-left pr-16">
+                                      <div class="text-white fs-16">
+                                        <span class="text-blue-579">
+                                          <a href="#" class="link-decoration">Dave Bautista</a>
+                                        </span>
+                                        and
+                                        <span class="text-blue-579">
+                                          <a href="#" class="link-decoration">Pom Klementieff</a>
+                                        </span>
+                                        in
+                                        <span class="text-blue-579">
+                                          <a href="#" class="link-decoration">Vệ Binh Dải Ngân Hà 3 (2023)</a>
+                                        </span>
+                                      </div>
+                                    </div>
+                                    <!-- end left -->
+                                    <!-- right -->
+                                    <div class="popup-image__sapo-right pl-16 ">
+                                      <div class="d-2xl-flex items-center fs-14 mb-8">
+                                        <span class="fw-600 mr-8">People</span>
+                                        <span class="text-blue-579">
+                                          <a href="#" class="link-decoration">Dave Bautista</a>
+                                        </span>
+                                        ,
+                                        <span class="text-blue-579">
+                                          <a href="#" class="link-decoration">Pom Klementieff</a>
+                                        </span>
+                                      </div>
+                                      <div class="d-2xl-flex items-center fs-14 mb-8">
+                                        <span class="fw-600 mr-8">Title</span>
+                                        <span class="text-blue-579">
+                                          <a href="#" class="link-decoration">Vệ Binh Dải Ngân Hà 3</a>
+                                        </span>
+                                      </div>
+                                      <div class="fs-12 text-white-70 mt-12">Photo by Jessica Miglio/Jessica Miglio - © MARVEL 2023.</div>
+                                    </div>
+                                    <!-- end right -->
+                                  </div>
+                                  <!-- end content -->
+                                </div>
+                                <!-- end sapo -->
+                                <!-- show sapo -->
+                                <div class="popup-image__sapo-not d-2xl-flex items-center justify-center js__showPopupSapo cursor">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path></svg>
+                                </div>
+                                <!-- end show sapo -->
+                              </div>
+                            </div>
+                            <!-- end item -->
+                            <!-- item -->
+                            <div class="swiper-slide">
+                              <div class="popup-image__item js__popupImageItem">
+                                <div class="popup-image__thumb">
+                                  <img src="./images/3.jpg" alt="">
+                                </div>
+                                <!-- sapo -->
+                                <div class="w-1280 popup-image__sapo js__popupImageSapo">
+                                  <!-- icon -->
+                                  <div class="popup-image__sapo-close d-2xl-flex items-center justify-center js__closePopupSapo cursor">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"  viewBox="0 0 24 24" fill="currentColor" role="presentation"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59 7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12 5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"></path></svg>
+                                  </div>
+                                  <!-- end icon -->
+                                  
+                                  <!-- content -->
+                                  <h4 class="text-yellow-f5c px-24 py-8 fs-14 h-36 d-2xl-flex items-center">Vệ Binh Dải Ngân Hà 3 (2023)</h4>
+                                  <div class="popup-image__sapo-content px-24 pb-16 d-2xl-flex">
+                                    <!-- left -->
+                                    <div class="popup-image__sapo-left pr-16">
+                                      <div class="text-white fs-16">
+                                        <span class="text-blue-579">
+                                          <a href="#" class="link-decoration">Dave Bautista</a>
+                                        </span>
+                                        and
+                                        <span class="text-blue-579">
+                                          <a href="#" class="link-decoration">Pom Klementieff</a>
+                                        </span>
+                                        in
+                                        <span class="text-blue-579">
+                                          <a href="#" class="link-decoration">Vệ Binh Dải Ngân Hà 3 (2023)</a>
+                                        </span>
+                                      </div>
+                                    </div>
+                                    <!-- end left -->
+                                    <!-- right -->
+                                    <div class="popup-image__sapo-right pl-16 ">
+                                      <div class="d-2xl-flex items-center fs-14 mb-8">
+                                        <span class="fw-600 mr-8">People</span>
+                                        <span class="text-blue-579">
+                                          <a href="#" class="link-decoration">Dave Bautista</a>
+                                        </span>
+                                        ,
+                                        <span class="text-blue-579">
+                                          <a href="#" class="link-decoration">Pom Klementieff</a>
+                                        </span>
+                                      </div>
+                                      <div class="d-2xl-flex items-center fs-14 mb-8">
+                                        <span class="fw-600 mr-8">Title</span>
+                                        <span class="text-blue-579">
+                                          <a href="#" class="link-decoration">Vệ Binh Dải Ngân Hà 3</a>
+                                        </span>
+                                      </div>
+                                      <div class="fs-12 text-white-70 mt-12">Photo by Jessica Miglio/Jessica Miglio - © MARVEL 2023.</div>
+                                    </div>
+                                    <!-- end right -->
+                                  </div>
+                                  <!-- end content -->
+                                </div>
+                                <!-- end sapo -->
+                                <!-- show sapo -->
+                                <div class="popup-image__sapo-not d-2xl-flex items-center justify-center js__showPopupSapo cursor">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path></svg>
+                                </div>
+                                <!-- end show sapo -->
+                              </div>
+                            </div>
+                            <!-- end item -->
+                            <!-- item -->
+                            <div class="swiper-slide">
+                              <div class="popup-image__item js__popupImageItem">
+                                <div class="popup-image__thumb">
+                                  <img src="./images/4.jpg" alt="">
+                                </div>
+                                <!-- sapo -->
+                                <div class="w-1280 popup-image__sapo js__popupImageSapo">
+                                  <!-- icon -->
+                                  <div class="popup-image__sapo-close d-2xl-flex items-center justify-center js__closePopupSapo cursor">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"  viewBox="0 0 24 24" fill="currentColor" role="presentation"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59 7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12 5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"></path></svg>
+                                  </div>
+                                  <!-- end icon -->
+                                  
+                                  <!-- content -->
+                                  <h4 class="text-yellow-f5c px-24 py-8 fs-14 h-36 d-2xl-flex items-center">Vệ Binh Dải Ngân Hà 3 (2023)</h4>
+                                  <div class="popup-image__sapo-content px-24 pb-16 d-2xl-flex">
+                                    <!-- left -->
+                                    <div class="popup-image__sapo-left pr-16">
+                                      <div class="text-white fs-16">
+                                        <span class="text-blue-579">
+                                          <a href="#" class="link-decoration">Dave Bautista</a>
+                                        </span>
+                                        and
+                                        <span class="text-blue-579">
+                                          <a href="#" class="link-decoration">Pom Klementieff</a>
+                                        </span>
+                                        in
+                                        <span class="text-blue-579">
+                                          <a href="#" class="link-decoration">Vệ Binh Dải Ngân Hà 3 (2023)</a>
+                                        </span>
+                                      </div>
+                                    </div>
+                                    <!-- end left -->
+                                    <!-- right -->
+                                    <div class="popup-image__sapo-right pl-16 ">
+                                      <div class="d-2xl-flex items-center fs-14 mb-8">
+                                        <span class="fw-600 mr-8">People</span>
+                                        <span class="text-blue-579">
+                                          <a href="#" class="link-decoration">Dave Bautista</a>
+                                        </span>
+                                        ,
+                                        <span class="text-blue-579">
+                                          <a href="#" class="link-decoration">Pom Klementieff</a>
+                                        </span>
+                                      </div>
+                                      <div class="d-2xl-flex items-center fs-14 mb-8">
+                                        <span class="fw-600 mr-8">Title</span>
+                                        <span class="text-blue-579">
+                                          <a href="#" class="link-decoration">Vệ Binh Dải Ngân Hà 3</a>
+                                        </span>
+                                      </div>
+                                      <div class="fs-12 text-white-70 mt-12">Photo by Jessica Miglio/Jessica Miglio - © MARVEL 2023.</div>
+                                    </div>
+                                    <!-- end right -->
+                                  </div>
+                                  <!-- end content -->
+                                </div>
+                                <!-- end sapo -->
+                                <!-- show sapo -->
+                                <div class="popup-image__sapo-not d-2xl-flex items-center justify-center js__showPopupSapo cursor">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path></svg>
+                                </div>
+                                <!-- end show sapo -->
+                              </div>
+                            </div>
+                            <!-- end item -->
+                          </div>
+                          <div class="swiper-button-next"></div>
+                          <div class="swiper-button-prev"></div>
+                        </div>
+                        
+                      </div>
+                      <!-- end container -->
+                    </div>
+                    <!-- end popup image -->
                     </div>
                     <!-- end box -->
                   </div>

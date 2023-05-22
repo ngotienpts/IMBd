@@ -30,8 +30,21 @@ document.addEventListener("DOMContentLoaded", function () {
     // rating
     var rating = getElement(".js__rating");
 
-    // show hide sapo popup image 
-    var popupImageItems = getAllElement('.js__popupImageItem')
+    // show hide sapo popup image
+    var popupImageItems = getAllElement(".js__popupImageItem");
+
+    // show popup image
+    var photoBoxs = getAllElement(".js__photoBox");
+
+    // show all topic mb
+    var itemPopular = getAllElement(".js__popularItemmb");
+
+    // slider six items
+    const sixSliders = getAllElement(".js_sixItems");
+    // slider four items
+    const fourSliders = getAllElement(".js_fourItems");
+    // slider six items
+    const threeSliders = getAllElement(".js_threeItems");
 
     const app = {
         // su ly cac su kien
@@ -221,21 +234,60 @@ document.addEventListener("DOMContentLoaded", function () {
                     };
                 });
 
-            // show hide sapo popup image 
-            popupImageItems && popupImageItems.forEach(item => {
-                var sapo = item.querySelector('.js__popupImageSapo'),
-                    hideSapo = item.querySelector('.js__closePopupSapo'),
-                    showSapo = item.querySelector('.js__showPopupSapo')
-                
-                hideSapo.onclick = function(){
-                    sapo.classList.add('hide')
-                    showSapo.classList.add('show')
-                }
-                showSapo.onclick = function(){
-                    sapo.classList.remove('hide')
-                    showSapo.classList.remove('show')
-                }
-            })
+            // show hide sapo popup image
+            popupImageItems &&
+                popupImageItems.forEach((item) => {
+                    var sapo = item.querySelector(".js__popupImageSapo"),
+                        hideSapo = item.querySelector(".js__closePopupSapo"),
+                        showSapo = item.querySelector(".js__showPopupSapo");
+
+                    hideSapo.onclick = function () {
+                        sapo.classList.add("hide");
+                        showSapo.classList.add("show");
+                    };
+                    showSapo.onclick = function () {
+                        sapo.classList.remove("hide");
+                        showSapo.classList.remove("show");
+                    };
+                });
+
+            // show popup image
+            photoBoxs &&
+                photoBoxs.forEach((item) => {
+                    var showPopupWrappers = item.querySelectorAll(
+                        ".js__showPopupWrapper"
+                    );
+                    var popupWrapper = item.querySelector(
+                        ".js__popupImageWrapper"
+                    );
+                    var closePopupWrapper = item.querySelector(
+                        ".js__closePopupImage"
+                    );
+                    showPopupWrappers &&
+                        showPopupWrappers.forEach((itemImage) => {
+                            itemImage.onclick = function () {
+                                popupWrapper.classList.add("active");
+                            };
+                        });
+                    if (closePopupWrapper) {
+                        closePopupWrapper.onclick = function () {
+                            popupWrapper.classList.remove("active");
+                        };
+                    }
+                });
+
+            // show all topic mb
+            itemPopular &&
+                itemPopular.forEach((item) => {
+                    var showListPopular = item.querySelector(
+                        ".js__showListPopularMb"
+                    );
+                    var listPopular = item.querySelector(".js__listPopularMb");
+
+                    showListPopular.onclick = function () {
+                        listPopular.classList.toggle("active");
+                    };
+                });
         },
 
         // slider primary
@@ -244,13 +296,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 slidesPerView: 3,
                 slidesPerGroup: 1,
                 direction: "vertical",
-                loop: !0,
-                freeMode: !0,
+                loop: true,
+                freeMode: true,
             });
             new Swiper(".primaryLeft", {
                 slidesPerView: 1,
                 spaceBetween: 0,
-                loop: !0,
+                loop: true,
                 thumbs: { swiper: e },
                 navigation: {
                     nextEl: ".swiper-button-next",
@@ -260,120 +312,142 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         // slider six item
         sliderSixItems: function () {
-            new Swiper(".js_sixItems", {
-                slidesPerView: 2.3,
-                spaceBetween: 16,
-                slidesPerGroup: 2,
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-                breakpoints: {
-                    640: {
-                        slidesPerView: 2,
+            sixSliders &&
+                sixSliders.forEach((sixSlider) => {
+                    var next = sixSlider.querySelector(".swiper-button-next");
+                    var prev = sixSlider.querySelector(".swiper-button-prev");
+                    new Swiper(sixSlider, {
+                        slidesPerView: 2.3,
+                        spaceBetween: 16,
                         slidesPerGroup: 2,
-                        spaceBetween: 16,
-                    },
-                    768: {
-                        slidesPerView: 4.3,
-                        slidesPerGroup: 4,
-                        spaceBetween: 16,
-                    },
-                    1024: {
-                        slidesPerView: 6,
-                        spaceBetween: 16,
-                        slidesPerGroup: 6,
-                    },
-                    1200: {
-                        slidesPerView: 6,
-                        spaceBetween: 25,
-                        slidesPerGroup: 6,
-                    },
-                },
-            });
+                        navigation: {
+                            nextEl: next,
+                            prevEl: prev,
+                        },
+                        breakpoints: {
+                            640: {
+                                slidesPerView: 2,
+                                slidesPerGroup: 2,
+                                spaceBetween: 16,
+                            },
+                            768: {
+                                slidesPerView: 4.3,
+                                slidesPerGroup: 4,
+                                spaceBetween: 16,
+                            },
+                            1024: {
+                                slidesPerView: 6,
+                                spaceBetween: 16,
+                                slidesPerGroup: 6,
+                            },
+                            1200: {
+                                slidesPerView: 6,
+                                spaceBetween: 25,
+                                slidesPerGroup: 6,
+                            },
+                        },
+                    });
+                });
         },
         // slider four item
         sliderFourItems: function () {
-            new Swiper(".js_fourItems", {
-                slidesPerView: 2.3,
-                spaceBetween: 16,
-                slidesPerGroup: 2,
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-                breakpoints: {
-                    640: {
-                        slidesPerView: 2,
-                        slidesPerGroup: 2,
-                        spaceBetween: 16,
-                    },
-                    768: {
+            fourSliders &&
+                fourSliders.forEach((fourSlider) => {
+                    var next = fourSlider.querySelector(".swiper-button-next");
+                    var prev = fourSlider.querySelector(".swiper-button-prev");
+                    new Swiper(fourSlider, {
                         slidesPerView: 2.3,
-                        slidesPerGroup: 4,
                         spaceBetween: 16,
-                    },
-                    1024: {
-                        slidesPerView: 4,
-                        spaceBetween: 16,
-                        slidesPerGroup: 6,
-                    },
-                    1200: {
-                        slidesPerView: 4,
-                        spaceBetween: 25,
-                        slidesPerGroup: 6,
-                    },
-                },
-            });
+                        slidesPerGroup: 2,
+                        navigation: {
+                            nextEl: next,
+                            prevEl: prev,
+                        },
+                        breakpoints: {
+                            640: {
+                                slidesPerView: 2,
+                                slidesPerGroup: 2,
+                                spaceBetween: 16,
+                            },
+                            768: {
+                                slidesPerView: 4.3,
+                                slidesPerGroup: 4,
+                                spaceBetween: 16,
+                            },
+                            1024: {
+                                slidesPerView: 4,
+                                spaceBetween: 16,
+                                slidesPerGroup: 6,
+                            },
+                            1200: {
+                                slidesPerView: 4,
+                                spaceBetween: 25,
+                                slidesPerGroup: 6,
+                            },
+                        },
+                    });
+                });
         },
         // slider three item
         sliderThreeItems: function () {
-            new Swiper(".js_threeItems", {
-                slidesPerView: 1.2,
-                spaceBetween: 16,
-                slidesPerGroup: 1,
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-                breakpoints: {
-                    640: {
-                        slidesPerView: 1,
+            threeSliders &&
+                threeSliders.forEach((threeSlider) => {
+                    var next = threeSlider.querySelector(".swiper-button-next");
+                    var prev = threeSlider.querySelector(".swiper-button-prev");
+                    new Swiper(threeSlider, {
+                        slidesPerView: 1.2,
+                        spaceBetween: 16,
                         slidesPerGroup: 1,
-                        spaceBetween: 16,
-                    },
-                    768: {
-                        slidesPerView: 2.2,
-                        spaceBetween: 16,
-                        slidesPerGroup: 2,
-                    },
-                    1024: {
-                        slidesPerView: 3,
-                        spaceBetween: 16,
-                        slidesPerGroup: 3,
-                    },
-                    1200: {
-                        slidesPerView: 3,
-                        spaceBetween: 25,
-                        slidesPerGroup: 3,
-                    },
-                },
-            });
+                        navigation: {
+                            nextEl: next,
+                            prevEl: prev,
+                        },
+                        breakpoints: {
+                            640: {
+                                slidesPerView: 1,
+                                slidesPerGroup: 1,
+                                spaceBetween: 16,
+                            },
+                            768: {
+                                slidesPerView: 2.2,
+                                spaceBetween: 16,
+                                slidesPerGroup: 2,
+                            },
+                            1024: {
+                                slidesPerView: 3,
+                                spaceBetween: 16,
+                                slidesPerGroup: 3,
+                            },
+                            1200: {
+                                slidesPerView: 3,
+                                spaceBetween: 25,
+                                slidesPerGroup: 3,
+                            },
+                        },
+                    });
+                });
         },
         // slider one item
         sliderOneItems: function () {
-            new Swiper(".js__oneItems", {
-                slidesPerView: 1,
-                spaceBetween: 30,
-                slidesPerGroup: 1,
-                // effect: "fade",
-                zoom: true,
-                loop: true,
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-            });
+            photoBoxs &&
+                photoBoxs.forEach((item) => {
+                    var pagi = item.querySelector(".swiper-pagination");
+                    var slider = item.querySelector(".js__oneItems");
+                    new Swiper(slider, {
+                        slidesPerView: 1,
+                        spaceBetween: 30,
+                        slidesPerGroup: 1,
+                        effect: "fade",
+                        pagination: {
+                            el: pagi,
+                            type: "fraction",
+                        },
+                        navigation: {
+                            nextEl: ".swiper-button-next",
+                            prevEl: ".swiper-button-prev",
+                        },
+                    });
+                });
         },
         // scroll top
         scrollFunc: function () {
@@ -413,11 +487,11 @@ document.addEventListener("DOMContentLoaded", function () {
             this.sliderPrimary();
             // slider one item
             this.sliderOneItems();
-            // slider three item
+            // // slider three item
             this.sliderThreeItems();
-            // slider four item
+            // // slider four item
             this.sliderFourItems();
-            // slider six item
+            // // slider six item
             this.sliderSixItems();
         },
     };
