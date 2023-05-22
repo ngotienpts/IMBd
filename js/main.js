@@ -433,6 +433,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 photoBoxs.forEach((item) => {
                     var pagi = item.querySelector(".swiper-pagination");
                     var slider = item.querySelector(".js__oneItems");
+                    var next = slider.querySelector(".swiper-button-next");
+                    var prev = slider.querySelector(".swiper-button-prev");
                     new Swiper(slider, {
                         slidesPerView: 1,
                         spaceBetween: 30,
@@ -443,8 +445,8 @@ document.addEventListener("DOMContentLoaded", function () {
                             type: "fraction",
                         },
                         navigation: {
-                            nextEl: ".swiper-button-next",
-                            prevEl: ".swiper-button-prev",
+                            nextEl: next,
+                            prevEl: prev,
                         },
                     });
                 });
