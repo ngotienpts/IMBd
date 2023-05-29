@@ -296,8 +296,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 slidesPerView: 3,
                 slidesPerGroup: 1,
                 direction: "vertical",
-                loop: true,
-                freeMode: true,
+                // loop: true,
+                // freeMode: true,
+                cssMode: true,
+                mousewheel: true,
+                keyboard: true,
             });
             new Swiper(".primaryLeft", {
                 slidesPerView: 1,
