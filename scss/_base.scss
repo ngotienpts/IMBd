@@ -17,6 +17,18 @@
     font-weight: 600;
     src: url("../fonts/Helvetica/Helvetica-Bold.ttf") format("truetype");
 }
+@font-face {
+    font-family: "Verdana.ttf";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Verdana/Verdana.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Verdana.ttf";
+    font-style: normal;
+    font-weight: 600;
+    src: url("../fonts/Verdana/Verdana.ttf") format("truetype");
+}
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
