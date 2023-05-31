@@ -1509,6 +1509,13 @@ img {
   visibility: visible;
 }
 
+.user__img {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .main-primary-left__list {
   max-width: 838px;
 }

@@ -535,8 +535,35 @@
         
         <div class="hearch-line-vertical d-sm-none"></div>
         <!-- sign in -->
-        <div class="flex-1 max-w-fit">
-          <button class="btn h-32 fw-600 tracking-02 fs-14 hover-bg-008 transition border-4">Sign In</button>
+        <div class="flex-1 max-w-fit hover-show-dropdown position-relative ">
+          <button class="btn h-32 fw-600 tracking-02 fs-14 hover-bg-008 transition border-4">
+            <img src="./images/svg/user2.svg" alt="" class="mr-4 user__img">
+            <span class="user__text">Binh</span>
+          </button>
+
+          <!-- dropdown -->
+          <div class="detail-dropdown bg-gray-1f py-8 border-4">
+            <a href="#" class="detail-dropdown-item d-2xl-flex items-center h-48 px-16 hover-bg-009">
+              <span class="fs-16">Your activity</span>
+            </a>
+            <a href="#" class="detail-dropdown-item d-2xl-flex items-center h-48 px-16 hover-bg-009">
+              <span class="fs-16">Your watchlist</span>
+            </a>
+            <a href="#" class="detail-dropdown-item d-2xl-flex items-center h-48 px-16 hover-bg-009">
+              <span class="fs-16">Your ratings</span>
+            </a>
+            <a href="#" class="detail-dropdown-item d-2xl-flex items-center h-48 px-16 hover-bg-009">
+              <span class="fs-16">Your lists</span>
+            </a>
+            <a href="#" class="detail-dropdown-item d-2xl-flex items-center h-48 px-16 hover-bg-009">
+              <span class="fs-16">Accounts settings</span>
+            </a>
+            <a href="#" class="detail-dropdown-item d-2xl-flex items-center h-48 px-16 hover-bg-009">
+              <span class="fs-16">Sign out</span>
+            </a>
+          </div>
+          <!-- end dropdown -->
+
         </div>
         <!-- end sign in -->
       </div>
